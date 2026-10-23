@@ -1,0 +1,2439 @@
+{
+  "project_working_title": "BELDE — The Wrong Commander",
+  "scope": "Visual preproduction only. All combat statistics, timelines and recruitment rules are design targets rather than implemented or playtested systems.",
+  "art_direction": {
+    "originality": "Original dark-fairytale world; references inform readability and craft, not copied characters, compositions or proprietary sprites.",
+    "mood": "Warm humanity inside a worn, rain-dark fantasy; moral ambiguity becomes readable through faces and gestures.",
+    "palette": {
+      "ink": "#151b2b",
+      "night": "#252b43",
+      "slate": "#4f5c73",
+      "fog": "#a8b5bd",
+      "parchment": "#eee0b7",
+      "cream": "#fff1cf",
+      "wood": "#60433b",
+      "rust": "#a15b46",
+      "copper": "#d99855",
+      "gold": "#f4c86b",
+      "moss": "#4a6456",
+      "leaf": "#83a970",
+      "teal": "#4ca6a8",
+      "ice": "#9be1dc",
+      "threat": "#ba4f61",
+      "warning": "#f39c64",
+      "corruption": "#744d91"
+    },
+    "pixel_rules": "Native 32px tiles, 64px actor cells, hard pixel clusters, nearest-neighbour presentation, no antialiased diagonals or painted blur; texture uses 2–4px clusters, no salt-and-pepper noise.",
+    "readability": "Terrain low contrast; units stronger values; faces and class tools highest contrast. Ally cyan rails, hostile red broken chevrons, neutral white cloth and open hands.",
+    "class_icons": {
+      "Healer": "Mint cross formed from four diamond pips.",
+      "DPS": "Copper double chevron.",
+      "Tanker": "Blue square shield.",
+      "Strategist": "Amber hexagonal marker."
+    }
+  },
+  "animation_contract": {
+    "status": "Preproduction specifications only. No runtime or production-ready animation claims.",
+    "perspective": "Three-quarter top-down, orthographic. South-east is the hero concept view.",
+    "base_sprite": {
+      "canvas_px": [
+        64,
+        64
+      ],
+      "usual_ink_box_px": [
+        32,
+        48
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ],
+      "ground_baseline_y": 56,
+      "minimum_gutter_px": 2,
+      "alpha": "transparent",
+      "outline": "1px coal, light-facing edge hue shifted; no black rectangle background"
+    },
+    "directions": [
+      "S",
+      "SW",
+      "W",
+      "NW",
+      "N",
+      "NE",
+      "E",
+      "SE"
+    ],
+    "directional_rule": "Eight authored directions. Mirroring is allowed for early blockout only; hand/weapon asymmetry must be corrected before production.",
+    "sheet_layout": "One action per sheet, columns=ordered animation frames; rows=the eight directions in the declared order. Cells64x64, 2px extruded gutter only at final atlas packaging. Name actor_id/action/direction/frame_001.",
+    "large_actor": {
+      "large_enemy_canvas_px": [
+        96,
+        96
+      ],
+      "large_enemy_foot_pivot_px": [
+        48,
+        84
+      ],
+      "boss_canvas_px": [
+        160,
+        160
+      ],
+      "boss_foot_pivot_px": [
+        80,
+        136
+      ],
+      "boss_hurtbox_footprint_px": [
+        60,
+        35
+      ],
+      "rule": "Keep boss attacks in separate160/320px VFX canvases; do not enlarge ordinary64px character cells."
+    },
+    "portrait_canvas_px": [
+      96,
+      96
+    ],
+    "portrait_crop": "Head, shoulders, recognisable tool/weapon edge; eye line y35; face readable at48px. Separate still portrait from animation sheets.",
+    "frame_indexing": "One-based throughout this document.",
+    "animations": {
+      "idle": {
+        "frames": 4,
+        "durations_ms": [
+          166.667,
+          166.667,
+          166.667,
+          166.667
+        ],
+        "motion": "One-pixel breath across four poses; planted foot fixed; equipment lags one frame.",
+        "fps": 6
+      },
+      "walk": {
+        "frames": 6,
+        "durations_ms": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "motion": "Contacts 1/4, passing poses 3/6; one-pixel vertical bob; small opposed arm arc.",
+        "fps": 10
+      },
+      "run": {
+        "frames": 8,
+        "durations_ms": [
+          71.429,
+          71.429,
+          71.429,
+          71.429,
+          71.429,
+          71.429,
+          71.429,
+          71.429
+        ],
+        "motion": "Contacts 1/5, airborne 3/7; lean three pixels; two-pixel bob; dust only on contact.",
+        "fps": 14
+      },
+      "basic_attack": {
+        "frames": 6,
+        "durations_ms": [
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333
+        ],
+        "motion": "Attack-specific silhouette; release/contact frame4; no hit before readable windup.",
+        "fps": 12,
+        "tell_frames": [
+          1,
+          2,
+          3
+        ],
+        "active_frames": [
+          4
+        ],
+        "recovery_frames": [
+          5,
+          6
+        ],
+        "contact_frame_one_based": 4,
+        "contact_frame_zero_based": 3
+      },
+      "ability_a": {
+        "frames": 8,
+        "durations_ms": [
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333
+        ],
+        "motion": "Distinct class-shaped anticipatory glyph; release frame 4; body and VFX separate; enemy/boss long windup uses stretched tell frames.",
+        "fps": 12,
+        "tell_frames": [
+          1,
+          2,
+          3
+        ],
+        "active_frames": [
+          4,
+          5
+        ],
+        "recovery_frames": [
+          6,
+          7,
+          8
+        ],
+        "release_frame_one_based": 4,
+        "release_frame_zero_based": 3
+      },
+      "ability_b": {
+        "frames": 8,
+        "durations_ms": [
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333,
+          83.333
+        ],
+        "motion": "Distinct class-shaped anticipatory glyph; release frame 4; body and VFX separate; enemy/boss long windup uses stretched tell frames.",
+        "fps": 12,
+        "tell_frames": [
+          1,
+          2,
+          3
+        ],
+        "active_frames": [
+          4,
+          5
+        ],
+        "recovery_frames": [
+          6,
+          7,
+          8
+        ],
+        "release_frame_one_based": 4,
+        "release_frame_zero_based": 3
+      },
+      "hit": {
+        "frames": 3,
+        "durations_ms": [
+          83.333,
+          83.333,
+          83.333
+        ],
+        "motion": "One-pixel recoil, warm rim then return; avoid sustained flicker.",
+        "fps": 12
+      },
+      "downed": {
+        "frames": 6,
+        "durations_ms": [
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0,
+          100.0
+        ],
+        "motion": "Weapon drops away from silhouette; kneel to side-lie; static breathing end pose with rescue icon.",
+        "fps": 10
+      },
+      "surrender": {
+        "frames": 4,
+        "durations_ms": [
+          125.0,
+          125.0,
+          125.0,
+          125.0
+        ],
+        "motion": "Lower weapon, open both hands, raise parchment cloth, settle; endpoint loops breathing.",
+        "fps": 8
+      },
+      "noncombatant": {
+        "frames": 4,
+        "durations_ms": [
+          166.667,
+          166.667,
+          166.667,
+          166.667
+        ],
+        "motion": "Bundle or child-sized companion silhouette; open hands; no combat equipment or target ring.",
+        "fps": 6
+      },
+      "portrait": {
+        "frames": 4,
+        "durations_ms": [
+          250.0,
+          250.0,
+          250.0,
+          250.0
+        ],
+        "motion": "Optional blink and tiny shoulder breath only; first frame is the static recruitment snapshot.",
+        "fps": 4
+      },
+      "celebrate": {
+        "frames": 6,
+        "durations_ms": [
+          125.0,
+          125.0,
+          125.0,
+          125.0,
+          125.0,
+          125.0
+        ],
+        "motion": "Personal gesture, not a shared weapon lift; used only after safe wave completion.",
+        "fps": 8
+      }
+    },
+    "layer_order": [
+      "ground_shadow",
+      "ground_telegraph",
+      "rear_weapon_or_cape",
+      "body",
+      "front_weapon",
+      "foreground_ability_effect",
+      "status_icons"
+    ],
+    "foot_contacts": "Walk contacts 1/4, passing 3/6; run contacts 1/5, airborne 3/7. Root motion is not painted into frames. Fixed pivot (32,56); contact toe at baseline. Test later at 60/80px per second.",
+    "vfx_contract": {
+      "grid": "64pxactor effects;128pxareaeffects;160/320pxbossareaeffects",
+      "phases": [
+        "anticipation_outline",
+        "active_contact",
+        "trail_or_projectile",
+        "decay"
+      ],
+      "body_separation": "Export body, weapon, contact flash, projectile, ground circle and decal separately. Do not bake health bars, targeting circles or text into sprites.",
+      "maximum_flash": "Peak contact flash2frames; no strobe sequences; reduced-motion treatment replaces shake with2px border pulse.",
+      "shape_grammar": {
+        "heal": "Mint cross formed from four diamond pips.",
+        "damage": "Copper triangular slash / double chevron.",
+        "tank": "Blue square shield brackets.",
+        "strategy": "Amber hexagonal trap marker and dotted trace.",
+        "hostile": "Hollow red chevron with pale broken edge.",
+        "safe": "Filled pale center with open outer ring."
+      }
+    },
+    "export_contract": {
+      "sprite_png": "RGBA sRGB, nearest-neighbour, unpremultiplied alpha,1x native scale plus optional4x presentation copy",
+      "atlas_metadata": [
+        "actor_id",
+        "action",
+        "direction",
+        "frame",
+        "duration_ms",
+        "pivot_px",
+        "attack_release_frame",
+        "hurtbox_footprint",
+        "vfx_attachment_px"
+      ],
+      "review": "Generated art contact sheets are design references until every frame/cell/direction is reviewed and separated. No automatic spritesheet quality claim."
+    },
+    "enemy_timing_override": "Roster animation frames are the base clip contract. Enemy/boss ability windup and recovery durations are deliberate overrides: hold the anticipation and recovery poses without moving the active event off frame 4. Attack interval includes idle time after recovery."
+  },
+  "enemies": [
+    {
+      "id": "MOB01",
+      "name": "Bramble Nib",
+      "role": "numerous light melee",
+      "draft_stats": {
+        "hp": 30,
+        "basic_damage": 4,
+        "attack_interval_s": 1.2,
+        "movement_tiles_s": 0.9,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Small stooped seedfolk in acorn caps, twig spears and oversized copper buttons. Three-point cap silhouette; exposed pale seed face.",
+      "palette": [
+        "leaf",
+        "copper",
+        "parchment"
+      ],
+      "silhouette": "Small stooped seedfolk in acorn caps, twig spears and oversized copper buttons",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Six-frame heel-toe waddle; cap lags one frame.",
+        "run": "Short bounding hop-run; spear points back.",
+        "basic_attack": "Thin twig poke; pale seed-shaped contact fleck.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Spear lifts above cap; tiny serrated floor triangle.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Thin twig poke; pale seed-shaped contact fleck.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Burr Rush",
+          "cooldown_s": 12,
+          "tell": "Three leaf-arrow marks ahead.",
+          "windup_s": 0.65,
+          "active": "Rush up to2tiles along the marked corridor.",
+          "recovery_s": 0.5,
+          "vfx": "Three low amber leaf streaks; no screen shake.",
+          "draft_effect": "Six damage to the first collision target only, once per rush.",
+          "max_affected_targets_per_cast": 1
+        },
+        {
+          "name": "Seed Shelter",
+          "cooldown_s": 18,
+          "tell": "Cap shuts and square bark outline appears.",
+          "windup_s": 0.8,
+          "active": "Stationary shell lasts2s.",
+          "recovery_s": 0.6,
+          "vfx": "Matte bark plates build from feet outward.",
+          "draft_effect": "35% damage reduction; cannot move/attack during shelter.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Spear laid sideways; both tiny hands raised. Acorn cap no longer bobs aggressively.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Bright frightened seed eyes; one patched cap edge.",
+      "sprite_canvas_px": [
+        64,
+        64
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ]
+    },
+    {
+      "id": "MOB02",
+      "name": "Wickling",
+      "role": "fast fragile runner",
+      "draft_stats": {
+        "hp": 22,
+        "basic_damage": 3,
+        "attack_interval_s": 1.0,
+        "movement_tiles_s": 1.35,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Wax-bodied lantern spirits with booted wick-feet and a glass-cage backpack. Teardrop face and tiny blue flame crest.",
+      "palette": [
+        "gold",
+        "teal",
+        "ink"
+      ],
+      "silhouette": "Wax-bodied lantern spirits with booted wick-feet and a glass-cage backpack",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Pendulum lantern swing; tiny alternating boot contacts.",
+        "run": "Elongated flame backward; fast scissor step.",
+        "basic_attack": "Warm spark spat in a short lob; clear falling arc.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Lantern shutter opens and a hollow diamond marks target.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Warm spark spat in a short lob; clear falling arc.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Lantern Skip",
+          "cooldown_s": 14,
+          "tell": "Two dotted step circles show destination.",
+          "windup_s": 0.7,
+          "active": "Dash1.5tiles; destination remains visible.",
+          "recovery_s": 0.45,
+          "vfx": "Separated teal afterimages, max3.",
+          "draft_effect": "Cannot pass structures; avoids first projectile during dash, not invulnerable afterward.",
+          "max_affected_targets_per_cast": 1
+        },
+        {
+          "name": "Dim Veil",
+          "cooldown_s": 22,
+          "tell": "Lantern lowered and grey dotted ring spreads.",
+          "windup_s": 0.8,
+          "active": "2tile mist for2s.",
+          "recovery_s": 0.7,
+          "vfx": "Low transparent grey scallops, silhouette remains visible.",
+          "draft_effect": "At most three nearby hostile allies gain 10% evasion for 2s within two tiles. Select nearest first; identical veils do not stack or refresh one another. Does not obscure the map or surrender badges.",
+          "max_affected_targets_per_cast": 3
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Closes lantern shutter and carries it in both hands; flame shrinks to a calm dot.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Glass chimney reflection; timid ember expression.",
+      "sprite_canvas_px": [
+        64,
+        64
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ]
+    },
+    {
+      "id": "MOB03",
+      "name": "Mireback",
+      "role": "slow shielded escort",
+      "draft_stats": {
+        "hp": 90,
+        "basic_damage": 8,
+        "attack_interval_s": 1.6,
+        "movement_tiles_s": 0.5,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Broad amphibian porter with a reed-basket shell, flat face and wooden lid shield. Two stubby legs support a trapezoid body.",
+      "palette": [
+        "leaf",
+        "night",
+        "copper"
+      ],
+      "silhouette": "Broad amphibian porter with a reed-basket shell, flat face and wooden lid shield",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Heavy left/right weight shift; basket settles after each step.",
+        "run": "Urgent squat shuffle, never a weightless sprint.",
+        "basic_attack": "Wooden lid shove with broad rectangular dust impact.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Lid turns edge-on; rectangular impact zone marks adjacent tile.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Wooden lid shove with broad rectangular dust impact.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Reed Bulwark",
+          "cooldown_s": 20,
+          "tell": "Reed squares knit over front arc.",
+          "windup_s": 0.9,
+          "active": "Front-facing protection lasts3s.",
+          "recovery_s": 0.6,
+          "vfx": "Three large reeds and a square rim; rear stays exposed.",
+          "draft_effect": "40% front damage reduction;10% back vulnerability.",
+          "max_affected_targets_per_cast": 1
+        },
+        {
+          "name": "Muddy Footing",
+          "cooldown_s": 16,
+          "tell": "One broken-outline tile turns umber.",
+          "windup_s": 0.8,
+          "active": "Mud persists4s on one tile.",
+          "recovery_s": 0.6,
+          "vfx": "Low opaque edge, clear center; no giant splash.",
+          "draft_effect": "The one-tile field can slow at most six distinct mobile actors by 20% during its 4s lifetime, regardless of side; each target is affected once, for at most 2s. Towers unaffected; identical slows do not stack.",
+          "max_affected_targets_per_cast": 6
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Lid set down like a table, palms up. Basket revealed to contain blankets.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Gentle broad eyes, one reed tucked behind ear.",
+      "sprite_canvas_px": [
+        96,
+        96
+      ],
+      "foot_pivot_px": [
+        48,
+        84
+      ]
+    },
+    {
+      "id": "MOB04",
+      "name": "Ashwing Scout",
+      "role": "flying flanker",
+      "draft_stats": {
+        "hp": 38,
+        "basic_damage": 5,
+        "attack_interval_s": 1.1,
+        "movement_tiles_s": 1.1,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Soot-grey moth person with triangular cloak-wings and cream face mask; legs remain visible when perched.",
+      "palette": [
+        "fog",
+        "ink",
+        "gold"
+      ],
+      "silhouette": "Soot-grey moth person with triangular cloak-wings and cream face mask; legs remain visible when perched",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Low hover uses eight beat poses and shadow at true tile.",
+        "run": "Two compact fast beats then glide; no vertical teleport.",
+        "basic_attack": "Needle gust directed along a thin fan-shaped cone.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Wings spread into large V and cone border fills from source.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Needle gust directed along a thin fan-shaped cone.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Cinder Fan",
+          "cooldown_s": 16,
+          "tell": "Narrow three-ray cone, dotted interior.",
+          "windup_s": 0.85,
+          "active": "One gust reaches3tiles.",
+          "recovery_s": 0.65,
+          "vfx": "Pale tapered wind slivers, amber tips.",
+          "draft_effect": "Seven damage to at most three targets, maximum 21 total damage per cast; ground shadows always show actual position.",
+          "max_affected_targets_per_cast": 3
+        },
+        {
+          "name": "Perch Feint",
+          "cooldown_s": 21,
+          "tell": "Parchment feather points to intended perch.",
+          "windup_s": 0.8,
+          "active": "Land on route-side marker for1.5s.",
+          "recovery_s": 0.5,
+          "vfx": "Small feather arc, never crosses a wall.",
+          "draft_effect": "Next basic attack gains1range; landing exposes scout to ground melee.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Lands, folds wings down, holds needle flat in both hands.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Large amber moth eyes and stitched cream mask; no monstrous teeth.",
+      "sprite_canvas_px": [
+        64,
+        64
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ]
+    },
+    {
+      "id": "MOB05",
+      "name": "Bellbone",
+      "role": "support summoner",
+      "draft_stats": {
+        "hp": 52,
+        "basic_damage": 3,
+        "attack_interval_s": 1.4,
+        "movement_tiles_s": 0.65,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Adult bone spirit wrapped in a mossy shawl, carrying a little handbell and satchel. Oval skull, rounded shawl, long thin legs.",
+      "palette": [
+        "parchment",
+        "corruption",
+        "leaf"
+      ],
+      "silhouette": "Adult bone spirit wrapped in a mossy shawl, carrying a little handbell and satchel",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Careful ankle roll; bell held still to avoid accidental sound.",
+        "run": "Long low strides; shawl trails but feet stay visible.",
+        "basic_attack": "Bell pulse drawn as one expanding broken ring.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Bell raised to eye line; dotted ring shows support radius.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Bell pulse drawn as one expanding broken ring.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Kindred Chime",
+          "cooldown_s": 18,
+          "tell": "Three small cross-shaped notes over allies.",
+          "windup_s": 1.0,
+          "active": "Pulse heals up to3nearby hostile allies.",
+          "recovery_s": 0.8,
+          "vfx": "Parchment cross-notes and soft teal rim.",
+          "draft_effect": "Restore 12 HP each to at most three nearby hostile allies, maximum 36 healing per cast. Select lowest percentage HP first; cannot overheal; bell can be interrupted.",
+          "max_affected_targets_per_cast": 3
+        },
+        {
+          "name": "Gather the Lost",
+          "cooldown_s": 26,
+          "tell": "Empty ground circle with small footprint glyph.",
+          "windup_s": 1.25,
+          "active": "One Bramble Nib joins at a marked route entry.",
+          "recovery_s": 0.9,
+          "vfx": "Leaf fragments draw inward into existing silhouette.",
+          "draft_effect": "One Bramble Nib per cast, at most two reinforcements per Bellbone per wave; never conjures inside defenses.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Bell placed on ground; hands crossed on chest; summons immediately stop.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Warm hollow eye lights and a hand-sewn shawl clasp.",
+      "sprite_canvas_px": [
+        64,
+        64
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ]
+    },
+    {
+      "id": "MOB06",
+      "name": "Quarry Horn",
+      "role": "heavy siege bruiser",
+      "draft_stats": {
+        "hp": 180,
+        "basic_damage": 12,
+        "attack_interval_s": 1.8,
+        "movement_tiles_s": 0.42,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Stone-skinned horned laborer with a mining apron and short blunt pick. Broad triangular torso, asymmetric chipped horn, enormous hands.",
+      "palette": [
+        "fog",
+        "copper",
+        "ink"
+      ],
+      "silhouette": "Stone-skinned horned laborer with a mining apron and short blunt pick",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Four weight shifts over six frames; shoulders counter-rotate.",
+        "run": "Slow charging jog with visibly planted heavy feet.",
+        "basic_attack": "Pick strikes down; stone chips point out from contact tile.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Pick raised overhead for0.9s; square impact tile flashes amber edge.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Pick strikes down; stone chips point out from contact tile.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Fault Stamp",
+          "cooldown_s": 22,
+          "tell": "Two adjacent tiles outlined with cracked squares.",
+          "windup_s": 1.15,
+          "active": "Ground pulse hits the two marked tiles.",
+          "recovery_s": 1.0,
+          "vfx": "One low jagged ring and chips, no random screen debris.",
+          "draft_effect": "Fourteen damage and 0.5s stagger to at most four distinct targets across both marked tiles, maximum 56 total damage per cast. Each target can be hit only once; tiles can be vacated.",
+          "max_affected_targets_per_cast": 4
+        },
+        {
+          "name": "Carry the Line",
+          "cooldown_s": 28,
+          "tell": "Stone arms form a shield above a wounded ally.",
+          "windup_s": 1.1,
+          "active": "Escort one nearby ally for3s.",
+          "recovery_s": 0.8,
+          "vfx": "Square stone halo connects two ground circles.",
+          "draft_effect": "Redirect 25% of one nearby hostile ally’s damage to self for 3s; one target, cannot combine with other redirection and cannot redirect redirected damage.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Pick flat on floor; kneels and opens huge hands. Chipped horn catches warm light.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Work-worn eyes and dust mask around neck, not a demon snarl.",
+      "sprite_canvas_px": [
+        96,
+        96
+      ],
+      "foot_pivot_px": [
+        48,
+        84
+      ]
+    },
+    {
+      "id": "MOB07",
+      "name": "Thistle Knitter",
+      "role": "trap engineer",
+      "draft_stats": {
+        "hp": 48,
+        "basic_damage": 5,
+        "attack_interval_s": 1.2,
+        "movement_tiles_s": 0.75,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Spiny hedgehog artisan in a tool belt, carrying spool and hooked needle. Rounded back spikes, narrow booted feet.",
+      "palette": [
+        "leaf",
+        "copper",
+        "night"
+      ],
+      "silhouette": "Spiny hedgehog artisan in a tool belt, carrying spool and hooked needle",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Spool bounces opposite lead leg; needle kept low.",
+        "run": "Quick forward lean, spines compress into a clean wedge.",
+        "basic_attack": "Hooked needle jab, tiny diamond impact flecks.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Spool spins; diamond tile cursor becomes striped.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Hooked needle jab, tiny diamond impact flecks.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Briar Stitch",
+          "cooldown_s": 15,
+          "tell": "Diamond trap outline remains visible for0.8s.",
+          "windup_s": 0.8,
+          "active": "One trap arms after1s and lasts6s.",
+          "recovery_s": 0.6,
+          "vfx": "Four corner thorns and central diamond, no hidden hazard.",
+          "draft_effect": "First mobile ally crossing takes four damage and 30% slow for 1.5s; exactly one target and one trigger. At most two live traps per Thistle Knitter; new placement replaces the oldest.",
+          "max_affected_targets_per_cast": 1
+        },
+        {
+          "name": "Unravel",
+          "cooldown_s": 24,
+          "tell": "Scissor glyph on one friendly placed trap.",
+          "windup_s": 1.0,
+          "active": "Disables a nearby trap for3s.",
+          "recovery_s": 0.7,
+          "vfx": "Copper thread line snaps outward.",
+          "draft_effect": "Disable one placed player trap for 3s. Cannot remove built towers; disabled trap returns with a clear countdown. Same target cannot be disabled again until it has been active for 3s.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Needle and spool hung on belt, paws raised; traps disarm with fading diamonds.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Mismatched spectacles and earnest brow.",
+      "sprite_canvas_px": [
+        64,
+        64
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ]
+    },
+    {
+      "id": "MOB08",
+      "name": "Hollow Courier",
+      "role": "ranged skirmisher",
+      "draft_stats": {
+        "hp": 44,
+        "basic_damage": 7,
+        "attack_interval_s": 1.4,
+        "movement_tiles_s": 0.85,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Hare-like masked messenger in a long split coat with a short sling and sealed satchel. Long ears and distinct split-coat silhouette.",
+      "palette": [
+        "night",
+        "parchment",
+        "corruption"
+      ],
+      "silhouette": "Hare-like masked messenger in a long split coat with a short sling and sealed satchel",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Springy heel-toe steps; satchel lag.",
+        "run": "Forward ears stream back; split coat makes two clear tails.",
+        "basic_attack": "Sling rotates twice then releases a single glowing pebble.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Sling circle and a thin dotted parabola identify the targeted area.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Sling rotates twice then releases a single glowing pebble.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Echo Stone",
+          "cooldown_s": 17,
+          "tell": "Target tile shows concentric broken circles.",
+          "windup_s": 0.9,
+          "active": "Pebble lands after0.5s flight.",
+          "recovery_s": 0.65,
+          "vfx": "Pale cyan arc and double-ring contact.",
+          "draft_effect": "Eight damage to at most three targets in a 0.65-tile radius, maximum 24 total damage per cast; destination stays marked during flight.",
+          "max_affected_targets_per_cast": 3
+        },
+        {
+          "name": "False Trail",
+          "cooldown_s": 23,
+          "tell": "Three footprints blink toward a safe lane-side tile.",
+          "windup_s": 0.75,
+          "active": "Retreat1tile and drop an obvious paper decoy.",
+          "recovery_s": 0.55,
+          "vfx": "Parchment silhouette with dotted edge, no false healthbar.",
+          "draft_effect": "One paper decoy can absorb one nonpiercing projectile for 2s; at most one live decoy per Courier. Cannot capture or rescue objectives.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Sling tied closed; presents sealed letter and empty hand.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "One folded ear and ink on the mask edge.",
+      "sprite_canvas_px": [
+        64,
+        64
+      ],
+      "foot_pivot_px": [
+        32,
+        56
+      ]
+    },
+    {
+      "id": "BOSS01",
+      "name": "Avarren, the Uncrowned",
+      "role": "demon king / final negotiable adversary",
+      "draft_stats": {
+        "hp": 2400,
+        "basic_damage": 18,
+        "attack_interval_s": 1.6,
+        "movement_tiles_s": 0.4,
+        "balance_status": "Proposed initial targets; not playtested."
+      },
+      "appearance": "Tall antler-crowned monarch with a cracked obsidian mantle, soft exposed face and luminous root-veins. Crown is broken and off-center; four-finger open hands.160pxcanvas.",
+      "palette": [
+        "ink",
+        "corruption",
+        "copper",
+        "teal"
+      ],
+      "silhouette": "Tall antler-crowned monarch with a cracked obsidian mantle, soft exposed face and luminous root-veins",
+      "motions": {
+        "idle": "Breathing and species-specific accessory follow-through; four-frame shared contract.",
+        "walk": "Deliberate planted steps; mantle opens after foot contact.",
+        "run": "Low urgent stride only in exposed third phase; no jump cuts.",
+        "basic_attack": "Open palm sweeps a clearly marked2tile arc; copper splinters dissolve on contact.",
+        "hit": "Use the three-frame shared recoil; preserve species silhouette.",
+        "downed": "Collapse without gore; rescue/capture badge distinguishes from permanent loss."
+      },
+      "basic_attack_timeline": {
+        "tell": "Palm turns outward, crown gutters teal, floor arc fills for1s.",
+        "windup": "Frames 1–3 of the shared six-frame basic attack; extend hold for stated species windup where given.",
+        "active": "Frame 4; damage/contact released once.",
+        "recovery": "Frames 5–6, then idle until attack interval elapses.",
+        "vfx": "Open palm sweeps a clearly marked2tile arc; copper splinters dissolve on contact.",
+        "max_targets": 1
+      },
+      "abilities": [
+        {
+          "name": "Crown of Roads",
+          "cooldown_s": 16,
+          "tell": "Three route segments display alternating serrated amber outlines.",
+          "windup_s": 1.4,
+          "active": "Successive roots strike each marked segment0.5s apart.",
+          "recovery_s": 1.2,
+          "vfx": "Three large roots travel visibly from boss; break into copper leaves.",
+          "draft_effect": "Eighteen damage to at most six distinct targets across all three segments, maximum 108 total damage per cast. Each target can be hit only once per cast. Never marks every escape route; a safe lane is always visible.",
+          "max_affected_targets_per_cast": 6
+        },
+        {
+          "name": "Unkept Oath",
+          "cooldown_s": 28,
+          "tell": "Mantle folds inward; square shield rim and two breakable anchors appear.",
+          "windup_s": 1.8,
+          "active": "Two anchors feed a shield for6s.",
+          "recovery_s": 1.5,
+          "vfx": "Teal threads connect boss and anchors; shield becomes a visible cracked shell.",
+          "draft_effect": "One shield absorbs at most 120 damage; at most two anchors exist. Destroying either anchor breaks the shield and exposes the boss for 3s. Recasting replaces existing anchors rather than stacking them.",
+          "max_affected_targets_per_cast": 1
+        }
+      ],
+      "nonhostile_states": {
+        "surrender": "Crown set on ground; open palm and lowered antlers; all arena telegraphs dissolve from outside inward.",
+        "noncombatant": "Weapon stowed, open-hand parchment badge, no red target outline. Some members arrive carrying provisions or wounded companions; hostility is never inferred from species."
+      },
+      "portrait": "Weathered adult face, tired amber eyes; monster and human motifs woven together.",
+      "phases": [
+        {
+          "phase": 1,
+          "hp_percent": "100–70",
+          "visual": "Crown amber, mantle closed; slow road attacks teach safe lanes."
+        },
+        {
+          "phase": 2,
+          "hp_percent": "70–35",
+          "visual": "Crown teal, mantle opens; summoned anchors and rescue windows."
+        },
+        {
+          "phase": 3,
+          "hp_percent": "35–0",
+          "visual": "Crown shattered, warm face exposed; previous tells shorten by at most15%, no unseen move."
+        }
+      ],
+      "encounter_guardrail": "2400HP is a design target for a six-to-eight unit endgame squad with upgrade support, not a validated30minute pacing number.",
+      "sprite_canvas_px": [
+        160,
+        160
+      ],
+      "foot_pivot_px": [
+        80,
+        136
+      ]
+    }
+  ],
+  "maps": [
+    {
+      "id": "MAP01",
+      "name": "Hinge Gate",
+      "act": "I",
+      "grid_tiles": [
+        32,
+        20
+      ],
+      "tile_px": 32,
+      "native_map_px": [
+        1024,
+        640
+      ],
+      "camera": "Orthographic top-down three-quarter view. Native 640×360 gameplay viewport pans over 1024×640 map; 1280×720 presentation at 2x. Overview composition is not a fit-to-screen runtime promise.",
+      "composition": "Old gatehouse with two readable orchard lanes; a broken wrong-commander banner lies in foreground.",
+      "lighting": "Dawn / copper rim light",
+      "objective": "Defend gate while learning recruitment, placement and two allies.",
+      "route_pattern": "orchard fork",
+      "enemy_tracks": [
+        {
+          "id": "enemy-main",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              8
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              15,
+              10
+            ],
+            [
+              24,
+              10
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            8
+          ],
+          "destination": [
+            29,
+            10
+          ]
+        },
+        {
+          "id": "enemy-branch",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              14
+            ],
+            [
+              9,
+              14
+            ],
+            [
+              15,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            14
+          ],
+          "destination": [
+            15,
+            10
+          ]
+        }
+      ],
+      "ally_patrol_tracks": [
+        {
+          "id": "patrol-north",
+          "kind": "ally",
+          "points": [
+            [
+              5,
+              5
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              20,
+              5
+            ],
+            [
+              26,
+              5
+            ]
+          ]
+        },
+        {
+          "id": "patrol-south",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              17
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              20,
+              17
+            ],
+            [
+              27,
+              17
+            ]
+          ]
+        }
+      ],
+      "tower_pad_centers": [
+        [
+          8,
+          6
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          23,
+          13
+        ],
+        [
+          12,
+          15
+        ]
+      ],
+      "elevation": {
+        "ground_level": 0,
+        "tower_platform_level": 1,
+        "scenery_roofs_level": 2,
+        "rule": "Raised surfaces carry a2pxparchment lip and a shadow; no hidden accuracy/line-of-sight modifiers."
+      },
+      "objective_positions": "Main gate at (29,10), HP 100; lose when HP reaches 0, triggering the recovery branch.",
+      "readability_notes": "Training straw figures at lower safe edge; all active lanes remain brighter than decorative paths.",
+      "route_separation": "Patrol centerlines are on y4/5or17/18; enemy centerlines sit within y7–14except MAP03north ingress atx6. Ally patrols and enemy tracks do not share a centerline segment. MAP03north ingress crosses the northern patrol at(6,4); use a visible raised stone footbridge there, with distinct vertical levels and no path junction.",
+      "props": [
+        "breakable crates outside enemy centerlines",
+        "banner checkpoint",
+        "low wall silhouettes",
+        "two rescue/repair resource caches"
+      ],
+      "spawn_telegraph": "3secondentry banner and serrated warm chevrons; no enemies appear from unmarked map center.",
+      "interactive_visuals": {
+        "enemy_tracks": "Ochre packed earth with hollow red chevrons and pale broken edges.",
+        "ally_tracks": "Cyan dashed double rails with rounded waypoint loops.",
+        "selected_unit": "parchment four-corner bracket; class-shaped foot badge",
+        "range": "Thin pale ring behind all actors; target-safe pulse only during inspection.",
+        "invalid_drop": "crosshatch and closed lock icon; red not the only cue"
+      }
+    },
+    {
+      "id": "MAP02",
+      "name": "Lantern Ford",
+      "act": "II",
+      "grid_tiles": [
+        32,
+        20
+      ],
+      "tile_px": 32,
+      "native_map_px": [
+        1024,
+        640
+      ],
+      "camera": "Orthographic top-down three-quarter view. Native 640×360 gameplay viewport pans over 1024×640 map; 1280×720 presentation at 2x. Overview composition is not a fit-to-screen runtime promise.",
+      "composition": "Two river channels split around a low sanctuary island; surrendered monsters gather near the shallow ford.",
+      "lighting": "Overcast blue / warm lantern islands",
+      "objective": "Survive many weak enemies and protect a marked negotiation circle.",
+      "route_pattern": "river split",
+      "enemy_tracks": [
+        {
+          "id": "enemy-main",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              7
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              13,
+              9
+            ],
+            [
+              21,
+              9
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            7
+          ],
+          "destination": [
+            29,
+            10
+          ]
+        },
+        {
+          "id": "enemy-branch",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              14
+            ],
+            [
+              9,
+              14
+            ],
+            [
+              16,
+              12
+            ],
+            [
+              24,
+              12
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            14
+          ],
+          "destination": [
+            29,
+            10
+          ]
+        }
+      ],
+      "ally_patrol_tracks": [
+        {
+          "id": "patrol-north",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              18,
+              4
+            ],
+            [
+              26,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "patrol-south",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              17
+            ],
+            [
+              11,
+              17
+            ],
+            [
+              20,
+              17
+            ],
+            [
+              27,
+              17
+            ]
+          ]
+        }
+      ],
+      "tower_pad_centers": [
+        [
+          7,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          22,
+          15
+        ]
+      ],
+      "elevation": {
+        "ground_level": 0,
+        "tower_platform_level": 1,
+        "scenery_roofs_level": 2,
+        "rule": "Raised surfaces carry a2pxparchment lip and a shadow; no hidden accuracy/line-of-sight modifiers."
+      },
+      "objective_positions": "Negotiation sanctuary at(16,10), gate(29,10); surrendered units use a protected off-lane route.",
+      "readability_notes": "Water darkens outside walkable banks; reeds never conceal telegraphs.",
+      "route_separation": "Patrol centerlines are on y4/5or17/18; enemy centerlines sit within y7–14except MAP03north ingress atx6. Ally patrols and enemy tracks do not share a centerline segment. MAP03north ingress crosses the northern patrol at(6,4); use a visible raised stone footbridge there, with distinct vertical levels and no path junction.",
+      "props": [
+        "breakable crates outside enemy centerlines",
+        "banner checkpoint",
+        "low wall silhouettes",
+        "two rescue/repair resource caches"
+      ],
+      "spawn_telegraph": "3secondentry banner and serrated warm chevrons; no enemies appear from unmarked map center.",
+      "interactive_visuals": {
+        "enemy_tracks": "Ochre packed earth with hollow red chevrons and pale broken edges.",
+        "ally_tracks": "Cyan dashed double rails with rounded waypoint loops.",
+        "selected_unit": "parchment four-corner bracket; class-shaped foot badge",
+        "range": "Thin pale ring behind all actors; target-safe pulse only during inspection.",
+        "invalid_drop": "crosshatch and closed lock icon; red not the only cue"
+      }
+    },
+    {
+      "id": "MAP03",
+      "name": "Five-Banner Breach",
+      "act": "III",
+      "grid_tiles": [
+        32,
+        20
+      ],
+      "tile_px": 32,
+      "native_map_px": [
+        1024,
+        640
+      ],
+      "camera": "Orthographic top-down three-quarter view. Native 640×360 gameplay viewport pans over 1024×640 map; 1280×720 presentation at 2x. Overview composition is not a fit-to-screen runtime promise.",
+      "composition": "A ruined aqueduct frames three converging invasion fronts and two rescue enclosures.",
+      "lighting": "Storm grey / ember rescue beacons",
+      "objective": "Choose which rescue gets support; withstand major siege; if won choose2of5generals.",
+      "route_pattern": "three-way breach",
+      "enemy_tracks": [
+        {
+          "id": "enemy-main",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              8
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              17,
+              10
+            ],
+            [
+              25,
+              10
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            8
+          ],
+          "destination": [
+            29,
+            10
+          ]
+        },
+        {
+          "id": "enemy-branch",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              14
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              17,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            14
+          ],
+          "destination": [
+            17,
+            10
+          ]
+        },
+        {
+          "id": "enemy-north",
+          "kind": "enemy",
+          "points": [
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              10,
+              8
+            ]
+          ],
+          "entry": [
+            6,
+            1
+          ],
+          "destination": [
+            10,
+            8
+          ]
+        }
+      ],
+      "ally_patrol_tracks": [
+        {
+          "id": "patrol-north",
+          "kind": "ally",
+          "points": [
+            [
+              3,
+              4
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              18,
+              4
+            ],
+            [
+              26,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "patrol-south",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              18
+            ],
+            [
+              12,
+              18
+            ],
+            [
+              20,
+              18
+            ],
+            [
+              27,
+              18
+            ]
+          ]
+        }
+      ],
+      "tower_pad_centers": [
+        [
+          8,
+          6
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          21,
+          7
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          22,
+          16
+        ]
+      ],
+      "elevation": {
+        "ground_level": 0,
+        "tower_platform_level": 1,
+        "scenery_roofs_level": 2,
+        "rule": "Raised surfaces carry a2pxparchment lip and a shadow; no hidden accuracy/line-of-sight modifiers."
+      },
+      "objective_positions": "Rescue lanterns at(12,5)/(21,17); gate(29,10). Both saving paths cost attention, never require sacrificing a named ally.",
+      "readability_notes": "Third lane enters at(6,1)and joins(10,8); aqueduct deck casts no opaque combat shadows.",
+      "route_separation": "Patrol centerlines are on y4/5or17/18; enemy centerlines sit within y7–14except MAP03north ingress atx6. Ally patrols and enemy tracks do not share a centerline segment. MAP03north ingress crosses the northern patrol at(6,4); use a visible raised stone footbridge there, with distinct vertical levels and no path junction.",
+      "props": [
+        "breakable crates outside enemy centerlines",
+        "banner checkpoint",
+        "low wall silhouettes",
+        "two rescue/repair resource caches"
+      ],
+      "spawn_telegraph": "3secondentry banner and serrated warm chevrons; no enemies appear from unmarked map center.",
+      "interactive_visuals": {
+        "enemy_tracks": "Ochre packed earth with hollow red chevrons and pale broken edges.",
+        "ally_tracks": "Cyan dashed double rails with rounded waypoint loops.",
+        "selected_unit": "parchment four-corner bracket; class-shaped foot badge",
+        "range": "Thin pale ring behind all actors; target-safe pulse only during inspection.",
+        "invalid_drop": "crosshatch and closed lock icon; red not the only cue"
+      }
+    },
+    {
+      "id": "MAP04",
+      "name": "The Return Road",
+      "act": "IV",
+      "grid_tiles": [
+        32,
+        20
+      ],
+      "tile_px": 32,
+      "native_map_px": [
+        1024,
+        640
+      ],
+      "camera": "Orthographic top-down three-quarter view. Native 640×360 gameplay viewport pans over 1024×640 map; 1280×720 presentation at 2x. Overview composition is not a fit-to-screen runtime promise.",
+      "composition": "A crossroads beneath capital walls, with distant prison windows and a mercy camp along the verge.",
+      "lighting": "Quiet violet evening / amber camp",
+      "objective": "Optional recovery skirmish shows new recruits and allows safe roster rearrangement.",
+      "route_pattern": "recovery fork",
+      "enemy_tracks": [
+        {
+          "id": "enemy-main",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              8
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              17,
+              10
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            8
+          ],
+          "destination": [
+            29,
+            10
+          ]
+        },
+        {
+          "id": "enemy-branch",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              13
+            ],
+            [
+              9,
+              13
+            ],
+            [
+              17,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            13
+          ],
+          "destination": [
+            17,
+            10
+          ]
+        }
+      ],
+      "ally_patrol_tracks": [
+        {
+          "id": "patrol-north",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              4
+            ],
+            [
+              12,
+              4
+            ],
+            [
+              20,
+              4
+            ],
+            [
+              27,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "patrol-south",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              17
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              20,
+              17
+            ],
+            [
+              27,
+              17
+            ]
+          ]
+        }
+      ],
+      "tower_pad_centers": [
+        [
+          8,
+          6
+        ],
+        [
+          16,
+          6
+        ],
+        [
+          23,
+          7
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          22,
+          15
+        ]
+      ],
+      "elevation": {
+        "ground_level": 0,
+        "tower_platform_level": 1,
+        "scenery_roofs_level": 2,
+        "rule": "Raised surfaces carry a2pxparchment lip and a shadow; no hidden accuracy/line-of-sight modifiers."
+      },
+      "objective_positions": "Camp banner at(29,10); failure here never causes permanent roster soft-lock.",
+      "readability_notes": "Before combat the same vista is a choice screen; recruitment nodes rendered as roof silhouettes with literal location names.",
+      "route_separation": "Patrol centerlines are on y4/5or17/18; enemy centerlines sit within y7–14except MAP03north ingress atx6. Ally patrols and enemy tracks do not share a centerline segment. MAP03north ingress crosses the northern patrol at(6,4); use a visible raised stone footbridge there, with distinct vertical levels and no path junction.",
+      "props": [
+        "breakable crates outside enemy centerlines",
+        "banner checkpoint",
+        "low wall silhouettes",
+        "two rescue/repair resource caches"
+      ],
+      "spawn_telegraph": "3secondentry banner and serrated warm chevrons; no enemies appear from unmarked map center.",
+      "interactive_visuals": {
+        "enemy_tracks": "Ochre packed earth with hollow red chevrons and pale broken edges.",
+        "ally_tracks": "Cyan dashed double rails with rounded waypoint loops.",
+        "selected_unit": "parchment four-corner bracket; class-shaped foot badge",
+        "range": "Thin pale ring behind all actors; target-safe pulse only during inspection.",
+        "invalid_drop": "crosshatch and closed lock icon; red not the only cue"
+      }
+    },
+    {
+      "id": "MAP05",
+      "name": "Crownroot Court",
+      "act": "V / first half",
+      "grid_tiles": [
+        32,
+        20
+      ],
+      "tile_px": 32,
+      "native_map_px": [
+        1024,
+        640
+      ],
+      "camera": "Orthographic top-down three-quarter view. Native 640×360 gameplay viewport pans over 1024×640 map; 1280×720 presentation at 2x. Overview composition is not a fit-to-screen runtime promise.",
+      "composition": "The final palace courtyard is crossed by roots, two outer routes and bright destructible oath anchors.",
+      "lighting": "Moonlit teal / fractured gold",
+      "objective": "Reach boss forecourt while keeping surviving allies alive and coordinating traps/towers.",
+      "route_pattern": "double courtyard",
+      "enemy_tracks": [
+        {
+          "id": "enemy-main",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              7
+            ],
+            [
+              10,
+              7
+            ],
+            [
+              18,
+              9
+            ],
+            [
+              25,
+              10
+            ],
+            [
+              29,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            7
+          ],
+          "destination": [
+            29,
+            10
+          ]
+        },
+        {
+          "id": "enemy-branch",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              14
+            ],
+            [
+              11,
+              14
+            ],
+            [
+              18,
+              12
+            ],
+            [
+              25,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            14
+          ],
+          "destination": [
+            25,
+            10
+          ]
+        }
+      ],
+      "ally_patrol_tracks": [
+        {
+          "id": "patrol-north",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              19,
+              4
+            ],
+            [
+              27,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "patrol-south",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              18
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              19,
+              18
+            ],
+            [
+              27,
+              18
+            ]
+          ]
+        }
+      ],
+      "tower_pad_centers": [
+        [
+          7,
+          5
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          22,
+          7
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          22,
+          16
+        ]
+      ],
+      "elevation": {
+        "ground_level": 0,
+        "tower_platform_level": 1,
+        "scenery_roofs_level": 2,
+        "rule": "Raised surfaces carry a2pxparchment lip and a shadow; no hidden accuracy/line-of-sight modifiers."
+      },
+      "objective_positions": "Inner gate at(29,10); oath anchor scenery at(20,5)/(20,16)becomes readable mechanics in next map.",
+      "readability_notes": "Root texture stays low contrast except active tells; palace facade frames center-right destination.",
+      "route_separation": "Patrol centerlines are on y4/5or17/18; enemy centerlines sit within y7–14except MAP03north ingress atx6. Ally patrols and enemy tracks do not share a centerline segment. MAP03north ingress crosses the northern patrol at(6,4); use a visible raised stone footbridge there, with distinct vertical levels and no path junction.",
+      "props": [
+        "breakable crates outside enemy centerlines",
+        "banner checkpoint",
+        "low wall silhouettes",
+        "two rescue/repair resource caches"
+      ],
+      "spawn_telegraph": "3secondentry banner and serrated warm chevrons; no enemies appear from unmarked map center.",
+      "interactive_visuals": {
+        "enemy_tracks": "Ochre packed earth with hollow red chevrons and pale broken edges.",
+        "ally_tracks": "Cyan dashed double rails with rounded waypoint loops.",
+        "selected_unit": "parchment four-corner bracket; class-shaped foot badge",
+        "range": "Thin pale ring behind all actors; target-safe pulse only during inspection.",
+        "invalid_drop": "crosshatch and closed lock icon; red not the only cue"
+      }
+    },
+    {
+      "id": "MAP06",
+      "name": "The Uncrowned Threshold",
+      "act": "V / climax",
+      "grid_tiles": [
+        32,
+        20
+      ],
+      "tile_px": 32,
+      "native_map_px": [
+        1024,
+        640
+      ],
+      "camera": "Orthographic top-down three-quarter view. Native 640×360 gameplay viewport pans over 1024×640 map; 1280×720 presentation at 2x. Overview composition is not a fit-to-screen runtime promise.",
+      "composition": "Circular throne garden framed by broken antlers, a safe negotiation dais and two oath anchors.",
+      "lighting": "Teal dusk turning warm dawn",
+      "objective": "Defeat Avarren, then choose pardon or refusal of pardon; no timed moral decision.",
+      "route_pattern": "boss split arena",
+      "enemy_tracks": [
+        {
+          "id": "enemy-main",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              8
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              17,
+              9
+            ],
+            [
+              24,
+              10
+            ],
+            [
+              28,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            8
+          ],
+          "destination": [
+            28,
+            10
+          ]
+        },
+        {
+          "id": "enemy-branch",
+          "kind": "enemy",
+          "points": [
+            [
+              1,
+              14
+            ],
+            [
+              9,
+              14
+            ],
+            [
+              17,
+              12
+            ],
+            [
+              24,
+              10
+            ]
+          ],
+          "entry": [
+            1,
+            14
+          ],
+          "destination": [
+            24,
+            10
+          ]
+        }
+      ],
+      "ally_patrol_tracks": [
+        {
+          "id": "patrol-north",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              4
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              18,
+              4
+            ],
+            [
+              26,
+              4
+            ]
+          ]
+        },
+        {
+          "id": "patrol-south",
+          "kind": "ally",
+          "points": [
+            [
+              4,
+              18
+            ],
+            [
+              11,
+              18
+            ],
+            [
+              18,
+              18
+            ],
+            [
+              26,
+              18
+            ]
+          ]
+        }
+      ],
+      "tower_pad_centers": [
+        [
+          7,
+          6
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          21,
+          6
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          21,
+          16
+        ]
+      ],
+      "elevation": {
+        "ground_level": 0,
+        "tower_platform_level": 1,
+        "scenery_roofs_level": 2,
+        "rule": "Raised surfaces carry a2pxparchment lip and a shadow; no hidden accuracy/line-of-sight modifiers."
+      },
+      "objective_positions": "Boss dais(25,10); breakable anchors(20,5)/(20,16); choice dais(25,10)after combat.",
+      "readability_notes": "Safe balcony strips along y4/y18 stay free of enemy-route spawns; crowns/roots never obscure enemy feet.",
+      "route_separation": "Patrol centerlines are on y4/5or17/18; enemy centerlines sit within y7–14except MAP03north ingress atx6. Ally patrols and enemy tracks do not share a centerline segment. MAP03north ingress crosses the northern patrol at(6,4); use a visible raised stone footbridge there, with distinct vertical levels and no path junction.",
+      "props": [
+        "breakable crates outside enemy centerlines",
+        "banner checkpoint",
+        "low wall silhouettes",
+        "two rescue/repair resource caches"
+      ],
+      "spawn_telegraph": "3secondentry banner and serrated warm chevrons; no enemies appear from unmarked map center.",
+      "interactive_visuals": {
+        "enemy_tracks": "Ochre packed earth with hollow red chevrons and pale broken edges.",
+        "ally_tracks": "Cyan dashed double rails with rounded waypoint loops.",
+        "selected_unit": "parchment four-corner bracket; class-shaped foot badge",
+        "range": "Thin pale ring behind all actors; target-safe pulse only during inspection.",
+        "invalid_drop": "crosshatch and closed lock icon; red not the only cue"
+      }
+    }
+  ],
+  "storyboard": [
+    {
+      "act": "I. The Wrong Commander",
+      "time_minutes": [
+        0,
+        5
+      ],
+      "beats": [
+        "A misplaced order sends a novice commander to Hinge Gate.",
+        "Choose one recruitment district: Bar (6), Kingdom (15), or Village (10). Each district introduces all available adults with portrait, name, class and two abilities.",
+        "Select exactly two initial allies; inspect without time pressure, place defenses, and learn Guard/Patrol/Advance."
+      ],
+      "visual_keyframe": "Two mismatched allies before an oversized broken standard; warm sunrise offers hope.",
+      "maps": [
+        "MAP01"
+      ],
+      "choice_memory": [
+        "starting district",
+        "first two allies",
+        "dialogue stance"
+      ]
+    },
+    {
+      "act": "II. Friends and Monsters",
+      "time_minutes": [
+        5,
+        11
+      ],
+      "beats": [
+        "Large waves of weak mobs test route coverage.",
+        "Weapons lowered and open palms identify some nonattackers; wounded couriers carry letters.",
+        "A winning defense triggers a surrender offer. The negotiation scene pauses combat; player can accept, decline or seek guarantees."
+      ],
+      "visual_keyframe": "A Bellbone lays down a bell while hostile silhouettes continue on a separate lane.",
+      "maps": [
+        "MAP02"
+      ],
+      "choice_memory": [
+        "sanctuary treatment",
+        "surrender response",
+        "civilian rescue"
+      ]
+    },
+    {
+      "act": "III. The Price of Victory",
+      "time_minutes": [
+        11,
+        18
+      ],
+      "beats": [
+        "Two rescue beacons and a major siege force allocation decisions.",
+        "Victory opens introductions for all five monster generals; choose exactly two as allies.",
+        "Defeat does not recruit generals; survivors retreat and casualties are acknowledged without gore."
+      ],
+      "visual_keyframe": "Five monster banners lower beneath the aqueduct while two rescue lights blink beyond the breach.",
+      "maps": [
+        "MAP03"
+      ],
+      "choice_memory": [
+        "rescues",
+        "siege result",
+        "chosen generals",
+        "original ally survival"
+      ]
+    },
+    {
+      "act": "IV. The Choosing",
+      "time_minutes": [
+        18,
+        24
+      ],
+      "beats": [
+        "Return to the crossroads; Royal Capital (10 candidates) and Prison (12) open in addition to early districts.",
+        "Assumption resolving ambiguous original rule: choose five newcomers after defeat or with zero to one surviving original ally; choose three after victory with both original allies. Existing recruits and earned generals remain; no duplicate recruitment.",
+        "The recovery battle is optional, with no permanent-loss soft lock. Short camp conversations reflect alliances and grievances."
+      ],
+      "visual_keyframe": "Capital carriage and prison door face one another across a warm camp lantern.",
+      "maps": [
+        "MAP04"
+      ],
+      "choice_memory": [
+        "recovery or reinforcement",
+        "newcomers",
+        "prison/capital stance"
+      ]
+    },
+    {
+      "act": "V. The Last Stand",
+      "time_minutes": [
+        24,
+        30
+      ],
+      "beats": [
+        "Surviving allies and newcomers defend the courtyard and enter Avarren’s threshold.",
+        "Three readable boss phases expose the crown and oath anchors.",
+        "After combat, choose forgive or refuse pardon. Pardon breaks the crown voluntarily and opens a shared road; refusal seals the crown and begins a public reckoning. Neither choice is treated as a joke or selected on a timer.",
+        "An illustrated epilogue shows the actual survivors, rescued civilians and remembered choices, then a procedural title."
+      ],
+      "visual_keyframe": "The crown rests between outstretched hands; surviving companions frame both possible decisions.",
+      "maps": [
+        "MAP05",
+        "MAP06"
+      ],
+      "choice_memory": [
+        "final survivors",
+        "boss choice",
+        "final dialogue",
+        "rescued communities"
+      ]
+    }
+  ],
+  "recruitment_locations": [
+    {
+      "id": "LOC_BAR",
+      "name": "The Bent Lantern",
+      "roster_size": 6,
+      "art": "Warm crowded timber bar, six personal stools/tools establish every recruit silhouette; rough clothing, adult ages and body types varied.",
+      "intro_camera": "Doorway to counter-wide tableau, then96pxportraitandfullsprite."
+    },
+    {
+      "id": "LOC_KINGDOM",
+      "name": "The Crownward Yard",
+      "roster_size": 15,
+      "art": "Three five-person training groups in pale stone cloisters; polished equipment with visible repairs, no interchangeable identical helmets.",
+      "intro_camera": "Wide courtyard to banner grouping, then individual portrait."
+    },
+    {
+      "id": "LOC_VILLAGE",
+      "name": "Reedwake Common",
+      "roster_size": 10,
+      "art": "Two five-person groups around communal well and harvest carts; practical layered clothes, improvised well-kept tools. Poverty affects access and story, not inherent worth/stat budget.",
+      "intro_camera": "Low well foreground frames two groups; pick person without moving portrait layout."
+    },
+    {
+      "id": "LOC_CAPITAL",
+      "name": "Glassmarket Contracts",
+      "roster_size": 10,
+      "art": "Two five-person contract tables beneath copper awnings; cosmopolitan mercenaries, royal couriers and veterans, varied skin tones and builds.",
+      "intro_camera": "Market panorama to contract desk then portrait."
+    },
+    {
+      "id": "LOC_PRISON",
+      "name": "The Quiet Cells",
+      "roster_size": 12,
+      "art": "Three four-person groups in a daylit stone hall with open doors; blankets, letters and personal objects; dignified varied adults, no torture spectacle.",
+      "intro_camera": "Outside bars to open hall; portrait uses the same respectful scale as noble recruits."
+    }
+  ],
+  "towers": [
+    {
+      "id": "TOWER01",
+      "name": "Palisade Roost",
+      "purpose": "Ranged unit shelter",
+      "silhouette": "Low square timber base, peaked shield roof, visible shooter window.",
+      "upgrade_stages": [
+        "I: Four posts and cloth roof.",
+        "II: Copper braces and wider window.",
+        "III: Shield slats and two lanterns."
+      ],
+      "draft_effect": "One ranged occupant receives 25% reduction to incoming projectile damage; its ranged basic-attack accuracy is 85%, compared with 100% on the ground. Range, damage and attack interval remain unchanged. No healing or trap bonuses. Unit remains visibly inside; cover does not reduce melee or area damage."
+    },
+    {
+      "id": "TOWER02",
+      "name": "Waybell Beacon",
+      "purpose": "Route/target support",
+      "silhouette": "Slender bellpost inside a diamond stone plinth, open center.",
+      "upgrade_stages": [
+        "I: Single bell.",
+        "II: Two bells and teal ribbon.",
+        "III: Three-bell copper crossbeam."
+      ],
+      "draft_effect": "Highlights at most six flying enemies within four tiles and reveals the next branch. Upgrade radii are four/five/six tiles; target cap stays six. No damage bonus."
+    },
+    {
+      "id": "TOWER03",
+      "name": "Hearthward",
+      "purpose": "Limited between-wave recovery",
+      "silhouette": "Round low brazier with cross-shaped stone rim, soft leaf smoke.",
+      "upgrade_stages": [
+        "I: Single pot.",
+        "II: Two pots and bandage shelf.",
+        "III: Small canvas canopy."
+      ],
+      "draft_effect": "Heals one ally at 8 HP/s between waves or 4 HP/s during combat, with a finite 60 HP healing reserve per wave. No overhealing; multiple Hearthwards cannot heal the same ally simultaneously. Clearly different from Healer unit casts."
+    },
+    {
+      "id": "TOWER04",
+      "name": "Bolt Cradle",
+      "purpose": "Fixed anti-siege defense",
+      "silhouette": "Wide copper-and-timber crossbow on squat stepped base.",
+      "upgrade_stages": [
+        "I: Single bow.",
+        "II: Winch and side braces.",
+        "III: Twin limbs with one projectile barrel."
+      ],
+      "draft_effect": "One nonpiercing bolt deals 18 damage to one target every 2s; range four tiles, minimum range 1.5. Slow visible flight, fixed firing arc and cost distinguish it from DPS units."
+    }
+  ],
+  "traps": [
+    {
+      "id": "TRAP01",
+      "name": "Snare Stitch",
+      "silhouette": "Six amber corners and a hexagonal center.",
+      "states": [
+        "Preview transparent",
+        "Arming dotted border",
+        "Armed hexagon corners",
+        "Trigger thread arc",
+        "Cooling empty hexagon"
+      ],
+      "draft_effect": "Four damage and 25% slow for 2s to the first eligible enemy crossing; one target and one charge. Slow does not stack with itself. Never hide the ground target."
+    },
+    {
+      "id": "TRAP02",
+      "name": "Cinder Pot",
+      "silhouette": "Round amber pot inside a chevron frame.",
+      "states": [
+        "Preview",
+        "Fuse anticipation",
+        "Ring active",
+        "Smoke decay",
+        "Spent pot"
+      ],
+      "draft_effect": "12 damage to at most four enemies in a one-tile radius, maximum 48 total damage per pot. One trigger after a 0.8s visible fuse; no ally damage; fire outline remains clear over all terrain."
+    },
+    {
+      "id": "TRAP03",
+      "name": "Decoy Standard",
+      "silhouette": "Parchment forked banner with an obvious hollow body.",
+      "states": [
+        "Preview",
+        "Raising",
+        "Active pulse",
+        "Hit paper burst",
+        "Folded"
+      ],
+      "draft_effect": "Taunts at most three light mobs for 1.5s within two tiles; does not affect bosses; one use. Reapplication does not extend the taunt."
+    }
+  ],
+  "deployment_modes": {
+    "Guard": "Square foot bracket and one fixed anchor; turn toward target while feet stay planted.",
+    "Patrol": "Rounded cyan waypoint loop and dashed double-rail route; upper-body attack animates over walk/run lower body; projectile release remains a fixed frame.",
+    "Advance": "Three forward chevrons and target flag; walk toward hostile, then respect engagement range; avoid an unreadable charge.",
+    "mobility_attack_rule": "Separate upper/lower body animation layers during production; contact foot never flips mid-stride; rooted casts use a telegraphed brief stop."
+  },
+  "ui": {
+    "gameplay_hud": "Top-left gate HP and wave; top-center act title and time; top-right pause and sync; bottom six-to-eight unit cards with class shape, HP and two ability cooldown wedges. Selected unit expands to show exact cooldown seconds. Presentation uses 2x nearest-neighbour scale.",
+    "recruitment_card": {
+      "canvas_px": [
+        420,
+        600
+      ],
+      "order": [
+        "96px portrait",
+        "Name · Age · class icon and label",
+        "One-sentence voice introduction",
+        "HP / basic damage / attack interval / range / movement",
+        "Ability A name, effect, cooldown, 64px VFX thumbnail",
+        "Ability B name, effect, cooldown, 64px VFX thumbnail",
+        "32×48 full sprite and idle/walk/run/attack strip",
+        "Recruit button and party capacity"
+      ],
+      "comparison": "Two pins allow side-by-side comparison. No hidden power score or social-class tier. Draft balance notice appears in this art bible, not final product UI."
+    },
+    "pause": "Frozen battlefield with dark navy scrim; Resume, Roster, Route edit, Settings, Save/Exit. Show pending editor changes as a count and do not silently apply them.",
+    "extension_popup": "Compact 360×540 concept: connected-pair badge, current map thumbnail, selected object controls, Undo/Redo, and Open Full Editor button. Actual browser popup size remains within browser constraints.",
+    "detached_editor": "1280×800 concept: 64px left tool rail, central map canvas, right 280px properties panel, bottom history and connection status. Tools: select, tower, unit, track, trap, erase. Native pixel preview at 1x/2x/4x.",
+    "drag_and_drop_states": [
+      "Rest: palette ghost has a clear pickup handle.",
+      "Pickup: 4px shadow and original slot outline.",
+      "Drag: ground-foot ghost follows cursor; range and collision footprint shown.",
+      "Valid: teal corner brackets and snapped tile coordinates.",
+      "Invalid: hatched footprint, lock icon and reason such as Track blocked.",
+      "Drop: 80ms settle with one contact dust puff.",
+      "Cancel: return to origin without cost.",
+      "Undo/redo: ghost replays last placement with count and label."
+    ],
+    "undo_redo": "Two explicit toolbar buttons andCtrl+Z/Ctrl+Shift+Zlegend;history shows object name and proposed/reverted state, never exposes internal protocols.",
+    "synchronization": "Game remains authoritative: Synced check badge, Pending outlined clock, Conflict split diamond with Review changes, Disconnected broken chain. Conflict compare shows PC state and proposed edit, with Apply/Discard only when safe. During combat, queue edits until a safe phase.",
+    "session_warning": {
+      "title": "Multiple Game Instances Detected",
+      "body": "Your game is currently active on another device or platform. Only one active PC gameplay session and one connected editor session are permitted.",
+      "action": "Disconnect other session to continue",
+      "detail": "One PC plus its authorized editor is a single connected pair. Show reconnect state after expiring heartbeat; UI must not imply a permanent lock after crash."
+    },
+    "accessibility": "Shape, text and color coding; readable 4.5:1 body contrast; minimum 16px HUD text at presentation resolution; independent VFX intensity and camera-shake toggles; nonflashing cooldowns; paused recruitment and decision timers."
+  },
+  "endings": {
+    "forgive": "Crown placed in open hands; teal roots unwind into warm gold leaves; generals and humans share the road. Reconstruction accompanies accountability.",
+    "refuse_pardon": "Crown sealed in parchment and copper chest; root light settles; companions escort Avarren to a public hearing or banishment based on prior choices. Somber dawn, no gory execution.",
+    "survivors": "Epilogue frames only feature actual survivors; empty places hold their tools and names."
+  },
+  "titles": {
+    "design": "Combinatorial epithet plus deed plus legacy; one thousand candidate combinations rather than one thousand handmade art cards.",
+    "epithets": [
+      "Merciful",
+      "Unbroken",
+      "Wayward",
+      "Lantern-Bearing",
+      "Briar-Crowned",
+      "Last",
+      "Quiet",
+      "Ash-Worn",
+      "Uncrowned",
+      "Oathbound"
+    ],
+    "deeds": [
+      "Keeper of the Gate",
+      "Friend of the Ford",
+      "Breaker of Chains",
+      "Shield of the Lost",
+      "Reader of Letters",
+      "Bearer of Five Banners",
+      "Warden of Roads",
+      "Voice in the Storm",
+      "Witness of the Crown",
+      "Guardian of the Hearth"
+    ],
+    "legacies": [
+      "of Reedwake",
+      "of the Bent Lantern",
+      "of the Quiet Cells",
+      "of the Dawn Pact",
+      "of the Broken Oath",
+      "of the Kindled Road",
+      "of the Empty Throne",
+      "of the Saved",
+      "of the Remembered",
+      "of the Returning"
+    ],
+    "combination_count": 1000,
+    "additional_variant": "Pardon/refusal, roster and dialogue seal variants can increase the count; unique valid titles require an editorial deduplication pass.",
+    "visual": "One shared parchment title card with modular class/location/mercy seals; legible text is never generated inside animation frames.",
+    "ending_verses": [
+      "Under an Open Crown",
+      "Beneath a Sealed Crown"
+    ],
+    "full_candidate_count": 2000,
+    "count_explanation": "10 epithets × 10 deeds × 10 legacies × 2 ending verses = 2,000 full title-card combinations. There are 1,000 base title phrases; editorial filtering is still needed for meaningful combinations."
+  },
+  "assumptions": [
+    "All recruitable humanoid characters are adults; diverse ages and bodies without child-soldier depictions.",
+    "The barbarian bar is rough and diverse, avoiding ethnic caricature.",
+    "Village recruits use equal class budgets to trained nobles; differences are kit, training, story and tradeoffs.",
+    "Act IV chooses five newcomers after loss or with at most one surviving original ally; otherwise three after a win with both original allies. Earned generals stay.",
+    "A 30-minute run is pacing intent, not a benchmarked length.",
+    "Mercenary contracts require gold; cost cannot lock out the minimum functional recovery roster.",
+    "Generals may fight under hostile banners before joining; nonhostility uses explicit state badges rather than species color."
+  ],
+  "project_working_subtitle": "The Uncrowned Road",
+  "balance_constraints": {
+    "status": "Proposed finite target caps for later implementation/playtesting.",
+    "selection": "Nearest eligible targets first; healing uses lowest percentage HP first. Stable actor ID resolves ties. All per-cast caps count distinct actors, so re-entry cannot multiply a capped effect.",
+    "stacking": "Repeated copies of the same slow, evasion buff, redirection or taunt do not stack or extend one another; the strongest eligible effect applies.",
+    "trap_limits": "One placed trap per tile, at most three live allied traps per placing Strategist and twelve allied traps total. More restrictive per-ability limits still apply. Every consumed or replaced trap has a visible spent/fade state."
+  }
+}

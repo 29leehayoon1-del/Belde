@@ -1,0 +1,369 @@
+[
+  {
+    "id": "01-bar",
+    "title": "The Wayfarer Bar",
+    "ids": [
+      "BAR01",
+      "BAR02",
+      "BAR03",
+      "BAR04",
+      "BAR05",
+      "BAR06"
+    ],
+    "file": "art/01-bar.png",
+    "description": "6 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "3bb40ee1eefd1d7890de2c7fb60aa92c963bfa3369eaba6ada95088a777589d7",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 140,
+      "y": 100,
+      "step": 146,
+      "w": 120,
+      "h": 116
+    }
+  },
+  {
+    "id": "02-kingdom-a",
+    "title": "Kingdom · Oathkeepers",
+    "ids": [
+      "KIN01",
+      "KIN02",
+      "KIN03",
+      "KIN04",
+      "KIN05"
+    ],
+    "file": "art/02-kingdom-a.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "3d269cf04c48e2442f91c2622357df9b1a3db02cba224d638d89df04e7eb9726",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 182,
+      "y": 111,
+      "step": 174,
+      "w": 125,
+      "h": 127
+    }
+  },
+  {
+    "id": "03-kingdom-b",
+    "title": "Kingdom · Watch & Ward",
+    "ids": [
+      "KIN06",
+      "KIN07",
+      "KIN08",
+      "KIN09",
+      "KIN10"
+    ],
+    "file": "art/03-kingdom-b.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "c3e85799c1bdaf37bfa1d7aa7fe0410c51902933bb66f65d74d43802dd7819bc",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 142,
+      "y": 112,
+      "step": 175,
+      "w": 125,
+      "h": 125
+    }
+  },
+  {
+    "id": "04-kingdom-c",
+    "title": "Kingdom · Last Banner",
+    "ids": [
+      "KIN11",
+      "KIN12",
+      "KIN13",
+      "KIN14",
+      "KIN15"
+    ],
+    "file": "art/04-kingdom-c.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "8e7f619df12bdbb3812f5c0e5a243547698476725c6eb6d7ca870172df2c0196",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 193,
+      "y": 147,
+      "step": 161,
+      "w": 115,
+      "h": 119
+    }
+  },
+  {
+    "id": "05-village-a",
+    "title": "Village · Hearthfolk",
+    "ids": [
+      "VIL01",
+      "VIL02",
+      "VIL03",
+      "VIL04",
+      "VIL05"
+    ],
+    "file": "art/05-village-a.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "619509ebac1e24cd579fc18068c975964e943541ee889a071af987f0ed5cec64",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 143,
+      "y": 119,
+      "step": 174,
+      "w": 127,
+      "h": 125
+    }
+  },
+  {
+    "id": "06-village-b",
+    "title": "Village · Field & Forge",
+    "ids": [
+      "VIL06",
+      "VIL07",
+      "VIL08",
+      "VIL09",
+      "VIL10"
+    ],
+    "file": "art/06-village-b.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a4677a4e5f4b3ea5e8f1d879206cbbdd1fc94e3322fad8fe9d8d3240badd3273",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 198,
+      "y": 119,
+      "step": 174,
+      "w": 113,
+      "h": 119
+    }
+  },
+  {
+    "id": "07-capital-a",
+    "title": "Royal Capital · Silver Contracts",
+    "ids": [
+      "CAP01",
+      "CAP02",
+      "CAP03",
+      "CAP04",
+      "CAP05"
+    ],
+    "file": "art/07-capital-a.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "22ed502b9cba45017ef9b108287a6ce255ce92f77781c932b772c2d53955c724",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 181,
+      "y": 111,
+      "step": 177,
+      "w": 122,
+      "h": 123
+    }
+  },
+  {
+    "id": "08-capital-b",
+    "title": "Royal Capital · Free Companies",
+    "ids": [
+      "CAP06",
+      "CAP07",
+      "CAP08",
+      "CAP09",
+      "CAP10"
+    ],
+    "file": "art/08-capital-b.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "1accd26f35fb1d190c9f3816920c60a33e10ca3e41f77a2b9a143433a59a76d5",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 148,
+      "y": 119,
+      "step": 173,
+      "w": 119,
+      "h": 121
+    }
+  },
+  {
+    "id": "09-prison-a",
+    "title": "Prison · The Unbroken",
+    "ids": [
+      "PRI01",
+      "PRI02",
+      "PRI03",
+      "PRI04",
+      "PRI05",
+      "PRI06"
+    ],
+    "file": "art/09-prison-a.png",
+    "description": "6 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "f93b38098b839caadb91fc011d326204e55429ad3def5932320794102603ae10",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 142,
+      "y": 116,
+      "step": 145,
+      "w": 117,
+      "h": 114
+    }
+  },
+  {
+    "id": "10-prison-b",
+    "title": "Prison · Beyond the Bars",
+    "ids": [
+      "PRI07",
+      "PRI08",
+      "PRI09",
+      "PRI10",
+      "PRI11",
+      "PRI12"
+    ],
+    "file": "art/10-prison-b.png",
+    "description": "6 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "c97581457d18f10ef1cc488bc4fd86bbc37fdcd0a6a865efa95c59e20f3633b4",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 185,
+      "y": 123,
+      "step": 144,
+      "w": 120,
+      "h": 113
+    }
+  },
+  {
+    "id": "11-generals",
+    "title": "The Five Monster Generals",
+    "ids": [
+      "GEN01",
+      "GEN02",
+      "GEN03",
+      "GEN04",
+      "GEN05"
+    ],
+    "file": "art/11-generals.png",
+    "description": "5 character models: portrait, idle, walk, run, basic attack, two abilities and downed key poses. Reference artwork; complete animation frames remain to be authored.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a7dd473637b367e217f9b309c0f0fda31ea90df53e1b1d6ded5aa13a635882d7",
+    "status": "generated concept / reference key poses",
+    "portrait_layout": {
+      "x": 167,
+      "y": 115,
+      "step": 174,
+      "w": 111,
+      "h": 121
+    }
+  },
+  {
+    "id": "12-enemies-a",
+    "title": "The Invaders · A",
+    "file": "art/12-enemies-a.png",
+    "description": "Four enemy models with movement, attack, two ability effects and surrender key poses; conceptual motion reference, not complete clips.",
+    "width": 1774,
+    "height": 887,
+    "sha256": "4ec4bc3b3b16fea4682bca0194b2493d940c9cc44ce61c0260518929497fbd4b",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "12-enemies-b",
+    "title": "The Invaders · B",
+    "file": "art/12-enemies-b.png",
+    "description": "Four enemy models with movement, attack, two ability effects and surrender key poses; conceptual motion reference, not complete clips.",
+    "width": 1774,
+    "height": 887,
+    "sha256": "a90b6128afd86c98d36cf81ec868813b3f8c581b88fd51e06d7707a68c12885f",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "13-avarren",
+    "title": "Avarren · The Uncrowned",
+    "file": "art/13-avarren.png",
+    "description": "Demon King model, attack/ability tells, vulnerable face, and two final-choice visual studies.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d0ff93bb1af1ef1e11aef56eca3cd20e352ca033447d48f134eb8bb30f482e97",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "14-maps-1",
+    "title": "Battlefields · I–III",
+    "file": "art/14-maps-1.png",
+    "description": "Three map environment studies with route and deployment overlays. Exact coordinates remain authoritative in world.json.",
+    "width": 1983,
+    "height": 793,
+    "sha256": "871e53699605ed5d29ca08071c2385969bf7f7136dd3db47a2cccecdfe47b584",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "14-maps-2",
+    "title": "Battlefields · IV–VI",
+    "file": "art/14-maps-2.png",
+    "description": "Three map environment studies with route and deployment overlays. Exact coordinates remain authoritative in world.json.",
+    "width": 1983,
+    "height": 793,
+    "sha256": "9ae6eabedd8588e0d03f6395566d0b04af307ded1b419a56598e7d8db4470aa2",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "15-recruitment",
+    "title": "Places Worth Fighting For",
+    "file": "art/15-recruitment.png",
+    "description": "Five recruitment-location vignettes plus Tornel’s introduction-card layout.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "944a935d02c9ed957b9c4111bfc9c327d5ab6d53e01117ab1eaedc83e23a9408",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "16-interface",
+    "title": "A Connected Command",
+    "file": "art/16-interface.png",
+    "description": "Static game HUD, compact extension, detached editor and session-warning layouts; no software implementation.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "6c92eaddfc2d8b12a66a3a59601b76dc1155bbaee2944ad1da360f290001ba95",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "17-towers-traps-vfx",
+    "title": "Tools of the Commander",
+    "file": "art/17-towers-traps-vfx.png",
+    "description": "Tower upgrades, traps, track pieces, deployment modes and class-shaped VFX studies.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a3bc6652493a6858f83a4913a85a0977afa5a74723b28fcbc56f3b2eb2ec5ff1",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "18-storyboard",
+    "title": "Five Acts · A Crown Set Down",
+    "file": "art/18-storyboard.png",
+    "description": "Five-act visual storyboard and both ending compositions with survivor/title-card treatment.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "61cac3697431acccf8c669faccd072b5764e0e8dfd4ef4a76a94f19b553be76c",
+    "status": "generated concept / reference key poses"
+  },
+  {
+    "id": "19-tornel-motion",
+    "title": "Tornel · Motion Study",
+    "file": "art/19-tornel-motion.png",
+    "description": "Sequential pose studies for walking, running, basic attack and two abilities. Artistic keyframes still require cleanup and timing validation.",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "867d79f50e0e0473114833a57a990377c1ebb5c572d0b62f2456882e1ac985fd",
+    "status": "generated concept / reference key poses"
+  }
+]

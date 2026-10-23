@@ -1,0 +1,19 @@
+{
+  "scope": "Visual preproduction, not game implementation",
+  "recruitable_models": 58,
+  "recruit_abilities": 116,
+  "enemy_models": 9,
+  "enemy_abilities": 18,
+  "maps": 6,
+  "recruitment_locations": 5,
+  "tower_families": 4,
+  "trap_families": 3,
+  "concept_boards_expected": 21,
+  "concept_boards_present": 21,
+  "missing_boards": [],
+  "character_ids_in_boards": 58,
+  "missing_character_boards": [],
+  "title_card_candidates": 2000,
+  "production_core_body_frames_remaining": 22736,
+  "production_status": "Concept key poses and full written specifications. Final frame sequences, directional sprites, cleanup, atlases and implementation are not delivered."
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "09-prison-a.png",
+    "change": "PRI05 carries ceramic pots/shards and a prosthetic arm; removed invented bow."
+  },
+  {
+    "file": "16-interface.png",
+    "change": "Canonical four classes, Tornel recruitment card and Bolt Cradle values replace invented class/card."
+  },
+  {
+    "file": "15-recruitment.png",
+    "change": "Ashen Tempo shows attack-speed buff; Kiln Splitter capped line attack description."
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Godot pixel-art scaling",
+    "url": "https://docs.godotengine.org/en/stable/tutorials/rendering/multiple_resolutions.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "Godot sprite animation",
+    "url": "https://docs.godotengine.org/en/stable/tutorials/2d/2d_sprite_animation.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "Chrome popup constraints",
+    "url": "https://developer.chrome.com/docs/extensions/reference/api/action",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "Chrome native messaging",
+    "url": "https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "W3C use of color",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "Godot pixel-art scaling (official source)",
+    "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/rendering/multiple_resolutions.rst",
+    "status": 200,
+    "observations": [
+      "o stretching, which can be important to ensure correct display for pixel art games. On top of that, changing the monitor's resolution makes alt-tabbing in and out of a game much slower since the monitor has to change resolutions every time this i",
+      "ctor (as well as the manually specified **Stretch Scale** setting) to integer values. By default, this setting is set to ``fractional``, which allows any scale factor to be applied (including fractional values such as ``2.5``). When set to ``integer``, the ",
+      "s ``2.5``). When set to ``integer``, the value is rounded down to the nearest integer. For example, instead of using a scale factor of ``2.5``, it would be rounded down to ``2.0``. This is useful to prevent distortion when displaying pixel art. Compare thi"
+    ]
+  },
+  {
+    "name": "Godot sprite animation (official source)",
+    "url": "https://raw.githubusercontent.com/godotengine/godot-docs/master/tutorials/2d/2d_sprite_animation.rst",
+    "status": 200,
+    "observations": [
+      " information. Now select the ``AnimatedSprite2D``, then look for the SpriteFrames panel at the bottom of the editor: .. image:: img/2d_animation_spriteframes.webp From the FileSystem dock on the left side, drag the 8 individual images into the center part of ",
+      " viewport. However, it is a bit slow. To fix this, change the *Speed (FPS)* setting in the SpriteFrames panel to 10. You can add additional animations by clicking the \"Add Animation\" button and adding additional images. Controlling the animation ~~~~~"
+    ]
+  },
+  {
+    "name": "Chrome action API (Chromium source)",
+    "url": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/common/extensions/api/action.json",
+    "status": 200,
+    "observations": [
+      "onal\": true } } }, { \"id\": \"OpenPopupOptions\", \"type\": \"object\", \"properties\": { \"windowId\": { \"type\": \"integer\", \"description\": \"The ID of the window to open the acti"
+    ]
+  },
+  {
+    "name": "Chrome native messaging (official archived documentation)",
+    "url": "https://raw.githubusercontent.com/GoogleChrome/developer.chrome.com/main/site/en/docs/extensions/mv3/nativeMessaging/index.md",
+    "status": 200,
+    "observations": [
+      "saging host configuration. An example of the file is as follows: ```json { \"name\": \"com.my_company.my_application\", \"description\": \"My Application\", \"path\": \"C:\\\\Program Files\\\\My Application\\\\chrome_native_messaging_host.exe\", \"type\": \"stdio\",",
+      "ialized using JSON, UTF-8 encoded and is preceded with 32-bit message length in native byte order. The maximum size of a single message from the native messaging host is 1 MB, mainly to protect Chrome from misbehaving native applications. The maximum size "
+    ]
+  }
+]
