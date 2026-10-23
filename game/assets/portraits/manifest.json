@@ -1,0 +1,524 @@
+{
+  "BAR01": {
+    "file": "res://assets/portraits/01-bar.png",
+    "region": [
+      140,
+      100,
+      120,
+      116
+    ]
+  },
+  "BAR02": {
+    "file": "res://assets/portraits/01-bar.png",
+    "region": [
+      140,
+      246,
+      120,
+      116
+    ]
+  },
+  "BAR03": {
+    "file": "res://assets/portraits/01-bar.png",
+    "region": [
+      140,
+      392,
+      120,
+      116
+    ]
+  },
+  "BAR04": {
+    "file": "res://assets/portraits/01-bar.png",
+    "region": [
+      140,
+      538,
+      120,
+      116
+    ]
+  },
+  "BAR05": {
+    "file": "res://assets/portraits/01-bar.png",
+    "region": [
+      140,
+      684,
+      120,
+      116
+    ]
+  },
+  "BAR06": {
+    "file": "res://assets/portraits/01-bar.png",
+    "region": [
+      140,
+      830,
+      120,
+      116
+    ]
+  },
+  "KIN01": {
+    "file": "res://assets/portraits/02-kingdom-a.png",
+    "region": [
+      182,
+      111,
+      125,
+      127
+    ]
+  },
+  "KIN02": {
+    "file": "res://assets/portraits/02-kingdom-a.png",
+    "region": [
+      182,
+      285,
+      125,
+      127
+    ]
+  },
+  "KIN03": {
+    "file": "res://assets/portraits/02-kingdom-a.png",
+    "region": [
+      182,
+      459,
+      125,
+      127
+    ]
+  },
+  "KIN04": {
+    "file": "res://assets/portraits/02-kingdom-a.png",
+    "region": [
+      182,
+      633,
+      125,
+      127
+    ]
+  },
+  "KIN05": {
+    "file": "res://assets/portraits/02-kingdom-a.png",
+    "region": [
+      182,
+      807,
+      125,
+      127
+    ]
+  },
+  "KIN06": {
+    "file": "res://assets/portraits/03-kingdom-b.png",
+    "region": [
+      142,
+      112,
+      125,
+      125
+    ]
+  },
+  "KIN07": {
+    "file": "res://assets/portraits/03-kingdom-b.png",
+    "region": [
+      142,
+      287,
+      125,
+      125
+    ]
+  },
+  "KIN08": {
+    "file": "res://assets/portraits/03-kingdom-b.png",
+    "region": [
+      142,
+      462,
+      125,
+      125
+    ]
+  },
+  "KIN09": {
+    "file": "res://assets/portraits/03-kingdom-b.png",
+    "region": [
+      142,
+      637,
+      125,
+      125
+    ]
+  },
+  "KIN10": {
+    "file": "res://assets/portraits/03-kingdom-b.png",
+    "region": [
+      142,
+      812,
+      125,
+      125
+    ]
+  },
+  "KIN11": {
+    "file": "res://assets/portraits/04-kingdom-c.png",
+    "region": [
+      193,
+      147,
+      115,
+      119
+    ]
+  },
+  "KIN12": {
+    "file": "res://assets/portraits/04-kingdom-c.png",
+    "region": [
+      193,
+      308,
+      115,
+      119
+    ]
+  },
+  "KIN13": {
+    "file": "res://assets/portraits/04-kingdom-c.png",
+    "region": [
+      193,
+      469,
+      115,
+      119
+    ]
+  },
+  "KIN14": {
+    "file": "res://assets/portraits/04-kingdom-c.png",
+    "region": [
+      193,
+      630,
+      115,
+      119
+    ]
+  },
+  "KIN15": {
+    "file": "res://assets/portraits/04-kingdom-c.png",
+    "region": [
+      193,
+      791,
+      115,
+      119
+    ]
+  },
+  "VIL01": {
+    "file": "res://assets/portraits/05-village-a.png",
+    "region": [
+      143,
+      119,
+      127,
+      125
+    ]
+  },
+  "VIL02": {
+    "file": "res://assets/portraits/05-village-a.png",
+    "region": [
+      143,
+      293,
+      127,
+      125
+    ]
+  },
+  "VIL03": {
+    "file": "res://assets/portraits/05-village-a.png",
+    "region": [
+      143,
+      467,
+      127,
+      125
+    ]
+  },
+  "VIL04": {
+    "file": "res://assets/portraits/05-village-a.png",
+    "region": [
+      143,
+      641,
+      127,
+      125
+    ]
+  },
+  "VIL05": {
+    "file": "res://assets/portraits/05-village-a.png",
+    "region": [
+      143,
+      815,
+      127,
+      125
+    ]
+  },
+  "VIL06": {
+    "file": "res://assets/portraits/06-village-b.png",
+    "region": [
+      198,
+      119,
+      113,
+      119
+    ]
+  },
+  "VIL07": {
+    "file": "res://assets/portraits/06-village-b.png",
+    "region": [
+      198,
+      293,
+      113,
+      119
+    ]
+  },
+  "VIL08": {
+    "file": "res://assets/portraits/06-village-b.png",
+    "region": [
+      198,
+      467,
+      113,
+      119
+    ]
+  },
+  "VIL09": {
+    "file": "res://assets/portraits/06-village-b.png",
+    "region": [
+      198,
+      641,
+      113,
+      119
+    ]
+  },
+  "VIL10": {
+    "file": "res://assets/portraits/06-village-b.png",
+    "region": [
+      198,
+      815,
+      113,
+      119
+    ]
+  },
+  "CAP01": {
+    "file": "res://assets/portraits/07-capital-a.png",
+    "region": [
+      181,
+      111,
+      122,
+      123
+    ]
+  },
+  "CAP02": {
+    "file": "res://assets/portraits/07-capital-a.png",
+    "region": [
+      181,
+      288,
+      122,
+      123
+    ]
+  },
+  "CAP03": {
+    "file": "res://assets/portraits/07-capital-a.png",
+    "region": [
+      181,
+      465,
+      122,
+      123
+    ]
+  },
+  "CAP04": {
+    "file": "res://assets/portraits/07-capital-a.png",
+    "region": [
+      181,
+      642,
+      122,
+      123
+    ]
+  },
+  "CAP05": {
+    "file": "res://assets/portraits/07-capital-a.png",
+    "region": [
+      181,
+      819,
+      122,
+      123
+    ]
+  },
+  "CAP06": {
+    "file": "res://assets/portraits/08-capital-b.png",
+    "region": [
+      148,
+      119,
+      119,
+      121
+    ]
+  },
+  "CAP07": {
+    "file": "res://assets/portraits/08-capital-b.png",
+    "region": [
+      148,
+      292,
+      119,
+      121
+    ]
+  },
+  "CAP08": {
+    "file": "res://assets/portraits/08-capital-b.png",
+    "region": [
+      148,
+      465,
+      119,
+      121
+    ]
+  },
+  "CAP09": {
+    "file": "res://assets/portraits/08-capital-b.png",
+    "region": [
+      148,
+      638,
+      119,
+      121
+    ]
+  },
+  "CAP10": {
+    "file": "res://assets/portraits/08-capital-b.png",
+    "region": [
+      148,
+      811,
+      119,
+      121
+    ]
+  },
+  "PRI01": {
+    "file": "res://assets/portraits/09-prison-a.png",
+    "region": [
+      142,
+      116,
+      117,
+      114
+    ]
+  },
+  "PRI02": {
+    "file": "res://assets/portraits/09-prison-a.png",
+    "region": [
+      142,
+      261,
+      117,
+      114
+    ]
+  },
+  "PRI03": {
+    "file": "res://assets/portraits/09-prison-a.png",
+    "region": [
+      142,
+      406,
+      117,
+      114
+    ]
+  },
+  "PRI04": {
+    "file": "res://assets/portraits/09-prison-a.png",
+    "region": [
+      142,
+      551,
+      117,
+      114
+    ]
+  },
+  "PRI05": {
+    "file": "res://assets/portraits/09-prison-a.png",
+    "region": [
+      142,
+      696,
+      117,
+      114
+    ]
+  },
+  "PRI06": {
+    "file": "res://assets/portraits/09-prison-a.png",
+    "region": [
+      142,
+      841,
+      117,
+      114
+    ]
+  },
+  "PRI07": {
+    "file": "res://assets/portraits/10-prison-b.png",
+    "region": [
+      185,
+      123,
+      120,
+      113
+    ]
+  },
+  "PRI08": {
+    "file": "res://assets/portraits/10-prison-b.png",
+    "region": [
+      185,
+      267,
+      120,
+      113
+    ]
+  },
+  "PRI09": {
+    "file": "res://assets/portraits/10-prison-b.png",
+    "region": [
+      185,
+      411,
+      120,
+      113
+    ]
+  },
+  "PRI10": {
+    "file": "res://assets/portraits/10-prison-b.png",
+    "region": [
+      185,
+      555,
+      120,
+      113
+    ]
+  },
+  "PRI11": {
+    "file": "res://assets/portraits/10-prison-b.png",
+    "region": [
+      185,
+      699,
+      120,
+      113
+    ]
+  },
+  "PRI12": {
+    "file": "res://assets/portraits/10-prison-b.png",
+    "region": [
+      185,
+      843,
+      120,
+      113
+    ]
+  },
+  "GEN01": {
+    "file": "res://assets/portraits/11-generals.png",
+    "region": [
+      167,
+      115,
+      111,
+      121
+    ]
+  },
+  "GEN02": {
+    "file": "res://assets/portraits/11-generals.png",
+    "region": [
+      167,
+      289,
+      111,
+      121
+    ]
+  },
+  "GEN03": {
+    "file": "res://assets/portraits/11-generals.png",
+    "region": [
+      167,
+      463,
+      111,
+      121
+    ]
+  },
+  "GEN04": {
+    "file": "res://assets/portraits/11-generals.png",
+    "region": [
+      167,
+      637,
+      111,
+      121
+    ]
+  },
+  "GEN05": {
+    "file": "res://assets/portraits/11-generals.png",
+    "region": [
+      167,
+      811,
+      111,
+      121
+    ]
+  }
+}

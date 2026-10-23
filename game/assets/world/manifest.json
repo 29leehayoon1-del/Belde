@@ -1,0 +1,80 @@
+{
+  "MAP01": {
+    "file": "res://assets/world/battlefields.png",
+    "col": 0,
+    "row": 0,
+    "cols": 3,
+    "rows": 2,
+    "rect_px": [
+      0,
+      0,
+      512,
+      512
+    ]
+  },
+  "MAP02": {
+    "file": "res://assets/world/battlefields.png",
+    "col": 1,
+    "row": 0,
+    "cols": 3,
+    "rows": 2,
+    "rect_px": [
+      512,
+      0,
+      512,
+      512
+    ]
+  },
+  "MAP03": {
+    "file": "res://assets/world/battlefields.png",
+    "col": 2,
+    "row": 0,
+    "cols": 3,
+    "rows": 2,
+    "rect_px": [
+      1024,
+      0,
+      512,
+      512
+    ]
+  },
+  "MAP04": {
+    "file": "res://assets/world/battlefields.png",
+    "col": 0,
+    "row": 1,
+    "cols": 3,
+    "rows": 2,
+    "rect_px": [
+      0,
+      512,
+      512,
+      512
+    ]
+  },
+  "MAP05": {
+    "file": "res://assets/world/battlefields.png",
+    "col": 1,
+    "row": 1,
+    "cols": 3,
+    "rows": 2,
+    "rect_px": [
+      512,
+      512,
+      512,
+      512
+    ]
+  },
+  "MAP06": {
+    "file": "res://assets/world/battlefields.png",
+    "col": 2,
+    "row": 1,
+    "cols": 3,
+    "rows": 2,
+    "rect_px": [
+      1024,
+      512,
+      512,
+      512
+    ]
+  }
+}

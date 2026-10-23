@@ -1,0 +1,1956 @@
+{
+  "BAR01": {
+    "file": "res://assets/actors/01-bar.png",
+    "row": 0,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      365,
+      523,
+      682,
+      832,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      23,
+      39,
+      151,
+      150
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "BAR02": {
+    "file": "res://assets/actors/01-bar.png",
+    "row": 1,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      365,
+      523,
+      682,
+      832,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      16,
+      8,
+      159,
+      155
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "BAR03": {
+    "file": "res://assets/actors/01-bar.png",
+    "row": 2,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      365,
+      523,
+      682,
+      832,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      21,
+      7,
+      156,
+      145
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "BAR04": {
+    "file": "res://assets/actors/01-bar.png",
+    "row": 3,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      365,
+      523,
+      682,
+      832,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      24,
+      7,
+      132,
+      147
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "BAR05": {
+    "file": "res://assets/actors/01-bar.png",
+    "row": 4,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      365,
+      523,
+      682,
+      832,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      32,
+      6,
+      135,
+      142
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "BAR06": {
+    "file": "res://assets/actors/01-bar.png",
+    "row": 5,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      365,
+      523,
+      682,
+      832,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      15,
+      1,
+      151,
+      167
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN01": {
+    "file": "res://assets/actors/02-kingdom-a.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      254,
+      444,
+      639,
+      826,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      36,
+      43,
+      117,
+      201
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN02": {
+    "file": "res://assets/actors/02-kingdom-a.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      254,
+      444,
+      639,
+      826,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      17,
+      10,
+      135,
+      172
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN03": {
+    "file": "res://assets/actors/02-kingdom-a.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      254,
+      444,
+      639,
+      826,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      11,
+      9,
+      181,
+      177
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN04": {
+    "file": "res://assets/actors/02-kingdom-a.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      254,
+      444,
+      639,
+      826,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      39,
+      4,
+      115,
+      178
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN05": {
+    "file": "res://assets/actors/02-kingdom-a.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      254,
+      444,
+      639,
+      826,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      25,
+      4,
+      160,
+      174
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN06": {
+    "file": "res://assets/actors/03-kingdom-b.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      447,
+      627,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      23,
+      66,
+      154,
+      173
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN07": {
+    "file": "res://assets/actors/03-kingdom-b.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      447,
+      627,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      43,
+      16,
+      133,
+      168
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN08": {
+    "file": "res://assets/actors/03-kingdom-b.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      447,
+      627,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      26,
+      9,
+      133,
+      164
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN09": {
+    "file": "res://assets/actors/03-kingdom-b.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      447,
+      627,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      32,
+      9,
+      126,
+      166
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN10": {
+    "file": "res://assets/actors/03-kingdom-b.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      447,
+      627,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      22,
+      6,
+      151,
+      186
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN11": {
+    "file": "res://assets/actors/04-kingdom-c.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      248,
+      445,
+      629,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      37,
+      85,
+      119,
+      135
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN12": {
+    "file": "res://assets/actors/04-kingdom-c.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      248,
+      445,
+      629,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      16,
+      22,
+      144,
+      160
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN13": {
+    "file": "res://assets/actors/04-kingdom-c.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      248,
+      445,
+      629,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      20,
+      17,
+      144,
+      155
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN14": {
+    "file": "res://assets/actors/04-kingdom-c.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      248,
+      445,
+      629,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      32,
+      16,
+      129,
+      148
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "KIN15": {
+    "file": "res://assets/actors/04-kingdom-c.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      248,
+      445,
+      629,
+      807,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      17,
+      9,
+      140,
+      169
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL01": {
+    "file": "res://assets/actors/05-village-a.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      437,
+      613,
+      789,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      22,
+      79,
+      159,
+      167
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL02": {
+    "file": "res://assets/actors/05-village-a.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      437,
+      613,
+      789,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      30,
+      14,
+      144,
+      154
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL03": {
+    "file": "res://assets/actors/05-village-a.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      437,
+      613,
+      789,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      26,
+      14,
+      144,
+      153
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL04": {
+    "file": "res://assets/actors/05-village-a.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      437,
+      613,
+      789,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      31,
+      6,
+      121,
+      163
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL05": {
+    "file": "res://assets/actors/05-village-a.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      255,
+      437,
+      613,
+      789,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      38,
+      10,
+      126,
+      175
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL06": {
+    "file": "res://assets/actors/06-village-b.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      277,
+      468,
+      642,
+      813,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      11,
+      92,
+      150,
+      173
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL07": {
+    "file": "res://assets/actors/06-village-b.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      277,
+      468,
+      642,
+      813,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      18,
+      13,
+      166,
+      171
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL08": {
+    "file": "res://assets/actors/06-village-b.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      277,
+      468,
+      642,
+      813,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      24,
+      9,
+      119,
+      156
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL09": {
+    "file": "res://assets/actors/06-village-b.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      277,
+      468,
+      642,
+      813,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      24,
+      7,
+      150,
+      160
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "VIL10": {
+    "file": "res://assets/actors/06-village-b.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      277,
+      468,
+      642,
+      813,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      16,
+      6,
+      141,
+      170
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP01": {
+    "file": "res://assets/actors/07-capital-a.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      260,
+      455,
+      649,
+      841,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      24,
+      79,
+      159,
+      174
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP02": {
+    "file": "res://assets/actors/07-capital-a.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      260,
+      455,
+      649,
+      841,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      13,
+      8,
+      163,
+      182
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP03": {
+    "file": "res://assets/actors/07-capital-a.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      260,
+      455,
+      649,
+      841,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      11,
+      5,
+      163,
+      184
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP04": {
+    "file": "res://assets/actors/07-capital-a.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      260,
+      455,
+      649,
+      841,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      16,
+      1,
+      137,
+      185
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP05": {
+    "file": "res://assets/actors/07-capital-a.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      260,
+      455,
+      649,
+      841,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      12,
+      5,
+      180,
+      151
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP06": {
+    "file": "res://assets/actors/08-capital-b.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      431,
+      610,
+      798,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      46,
+      66,
+      110,
+      169
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP07": {
+    "file": "res://assets/actors/08-capital-b.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      431,
+      610,
+      798,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      19,
+      10,
+      151,
+      168
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP08": {
+    "file": "res://assets/actors/08-capital-b.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      431,
+      610,
+      798,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      40,
+      10,
+      109,
+      165
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP09": {
+    "file": "res://assets/actors/08-capital-b.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      431,
+      610,
+      798,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      30,
+      5,
+      138,
+      176
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "CAP10": {
+    "file": "res://assets/actors/08-capital-b.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      431,
+      610,
+      798,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      20,
+      8,
+      150,
+      175
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI01": {
+    "file": "res://assets/actors/09-prison-a.png",
+    "row": 0,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      199,
+      363,
+      523,
+      682,
+      839,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      31,
+      47,
+      114,
+      147
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI02": {
+    "file": "res://assets/actors/09-prison-a.png",
+    "row": 1,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      199,
+      363,
+      523,
+      682,
+      839,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      31,
+      7,
+      122,
+      153
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI03": {
+    "file": "res://assets/actors/09-prison-a.png",
+    "row": 2,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      199,
+      363,
+      523,
+      682,
+      839,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      23,
+      0,
+      169,
+      155
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI04": {
+    "file": "res://assets/actors/09-prison-a.png",
+    "row": 3,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      199,
+      363,
+      523,
+      682,
+      839,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      20,
+      8,
+      172,
+      147
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI05": {
+    "file": "res://assets/actors/09-prison-a.png",
+    "row": 4,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      199,
+      363,
+      523,
+      682,
+      839,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a",
+      "ability_b"
+    ],
+    "idle_bounds_px": [
+      39,
+      6,
+      96,
+      149
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI06": {
+    "file": "res://assets/actors/09-prison-a.png",
+    "row": 5,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      199,
+      363,
+      523,
+      682,
+      839,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      19,
+      0,
+      173,
+      153
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI07": {
+    "file": "res://assets/actors/10-prison-b.png",
+    "row": 0,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      362,
+      519,
+      680,
+      828,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_b"
+    ],
+    "idle_bounds_px": [
+      28,
+      47,
+      127,
+      143
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI08": {
+    "file": "res://assets/actors/10-prison-b.png",
+    "row": 1,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      362,
+      519,
+      680,
+      828,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      25,
+      6,
+      138,
+      155
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI09": {
+    "file": "res://assets/actors/10-prison-b.png",
+    "row": 2,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      362,
+      519,
+      680,
+      828,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      31,
+      7,
+      149,
+      146
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI10": {
+    "file": "res://assets/actors/10-prison-b.png",
+    "row": 3,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      362,
+      519,
+      680,
+      828,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      32,
+      6,
+      121,
+      151
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI11": {
+    "file": "res://assets/actors/10-prison-b.png",
+    "row": 4,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      362,
+      519,
+      680,
+      828,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      30,
+      5,
+      131,
+      137
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "PRI12": {
+    "file": "res://assets/actors/10-prison-b.png",
+    "row": 5,
+    "rows": 6,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      196,
+      362,
+      519,
+      680,
+      828,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      27,
+      2,
+      125,
+      166
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "GEN01": {
+    "file": "res://assets/actors/11-generals.png",
+    "row": 0,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      250,
+      435,
+      613,
+      791,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      19,
+      78,
+      173,
+      164
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "GEN02": {
+    "file": "res://assets/actors/11-generals.png",
+    "row": 1,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      250,
+      435,
+      613,
+      791,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      25,
+      9,
+      167,
+      172
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "GEN03": {
+    "file": "res://assets/actors/11-generals.png",
+    "row": 2,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      250,
+      435,
+      613,
+      791,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      35,
+      4,
+      157,
+      169
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "GEN04": {
+    "file": "res://assets/actors/11-generals.png",
+    "row": 3,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      250,
+      435,
+      613,
+      791,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      28,
+      5,
+      164,
+      167
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "GEN05": {
+    "file": "res://assets/actors/11-generals.png",
+    "row": 4,
+    "rows": 5,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      250,
+      435,
+      613,
+      791,
+      1024
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      15,
+      7,
+      159,
+      172
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "battlefields",
+  "sources": [
+    "/workspace/Belde/preproduction/art/14-maps-1.png",
+    "/workspace/Belde/preproduction/art/14-maps-2.png"
+  ],
+  "output": "/workspace/Belde/game/assets/world/battlefields.png",
+  "prompt": "Create an original pixel-art GAMEPLAY BACKGROUND ATLAS inspired by these BELDE map references. Exact uniform THREE COLUMNS by TWO ROWS,6separate seamless rectangular scene panels, each512x512 if final1536x1024. Invisible panel boundaries, no frame/grid/border/labels/words/numbers. Completely remove all paths, roads, tracks, arrows, lane marks, patrol dots, towers, flags, soldiers, enemies, portraits, buttons, title bars and HUD. The game draws its actual editable paths separately, so DO NOT PAINT ANY ROAD OR CROSSING THROUGH ANY CENTER. Each panel is a quiet flat open clearing with unobstructed 80%center for actual tactical gameplay; decorative scenery confined outer10\u201315%edges. Low contrast mottled flat lawn/stone playable interior, overhead orthographic3/4 ground, never isometric grid; sharp pixelart clusters, no3D blur. All6images have same top-left warm light and darknavy/moss/copper fairytale palette, muted values to keep overlay sprites readable. Panels lefttorighttoprow:1sunrise orchard clearing with medieval gatehouse onlyrightedge and apple trees onlycorners;2riverford meadow with water as distant peripheral borderandstonebridge onlytopedge;3storm aqueduct siege clearing with ruinedarches onlytopedgeandcorner rubble. Bottomrow:4capitalcrossroads courtyard wideflatcobblestone(centerNOroads),walls/buildings onlyouteredgesandcamplanterns;5moonlit rootpalace court blankcenterflatpaleground,gnarledroots andgoldwindows onlyedges;6thronegarden openflatquietcenter,antlerarches,crownstatueandtealcrystals onlyfarouteredge. Strong environmental beauty but huge playable negative space in ALL6centerplanes. NO TEXT. Opaque full color background atlas."
+}

@@ -1,0 +1,293 @@
+{
+  "MOB01": {
+    "file": "res://assets/enemies/12-enemies-a.png",
+    "row": 0,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      455,
+      653,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      52,
+      72,
+      162,
+      158
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB02": {
+    "file": "res://assets/enemies/12-enemies-a.png",
+    "row": 1,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      455,
+      653,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      56,
+      15,
+      156,
+      183
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB03": {
+    "file": "res://assets/enemies/12-enemies-a.png",
+    "row": 2,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      455,
+      653,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      39,
+      8,
+      183,
+      174
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB04": {
+    "file": "res://assets/enemies/12-enemies-a.png",
+    "row": 3,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      245,
+      455,
+      653,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      21,
+      18,
+      201,
+      169
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB05": {
+    "file": "res://assets/enemies/12-enemies-b.png",
+    "row": 0,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      241,
+      467,
+      643,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      27,
+      54,
+      158,
+      167
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB06": {
+    "file": "res://assets/enemies/12-enemies-b.png",
+    "row": 1,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      241,
+      467,
+      643,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      14,
+      22,
+      196,
+      187
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB07": {
+    "file": "res://assets/enemies/12-enemies-b.png",
+    "row": 2,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      241,
+      467,
+      643,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      31,
+      18,
+      172,
+      152
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "MOB08": {
+    "file": "res://assets/enemies/12-enemies-b.png",
+    "row": 3,
+    "rows": 4,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      0,
+      241,
+      467,
+      643,
+      887
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "effect_only_frames": [
+      "ability_a"
+    ],
+    "idle_bounds_px": [
+      30,
+      6,
+      138,
+      212
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  },
+  "BOSS01": {
+    "file": "res://assets/enemies/13-avarren.png",
+    "row": 0,
+    "rows": 1,
+    "cols": 8,
+    "frames": {
+      "idle": 0,
+      "walk_a": 1,
+      "walk_b": 2,
+      "run": 3,
+      "attack": 4,
+      "ability_a": 5,
+      "ability_b": 6,
+      "downed": 7
+    },
+    "row_bounds_px": [
+      195,
+      609
+    ],
+    "alpha_verified": true,
+    "art_status": "Gameplay key poses; not a complete directional animation pack.",
+    "idle_bounds_px": [
+      9,
+      10,
+      239,
+      394
+    ],
+    "idle_bounds_analysis": "Alpha >=128; isolated sub-8px specks and detached neighboring-row fragments excluded. Read-only bounds analysis; image pixels unchanged."
+  }
+}

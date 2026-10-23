@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "premise": "A misplaced royal dispatch makes you commander of a gate that both armies have reasons to fear.",
+  "stories": {
+    "act1_gate": {
+      "act": 1,"title": "I · The Wrong Commander","subtitle": "A seal is not the same thing as an order worth following.","location": "Hinge Gate","background": "MAP01",
+      "dialogue": [{"speaker":"Commander","text":"The dispatch names someone taller. And considerably more dead."},{"speaker":"{ally}","text":"Then perhaps we have been given the better commander."},{"speaker":"Gatekeeper","text":"Two roads from the orchard. One gate. The first watch is yours."},{"speaker":"Commander","text":"We have two allies, a few old towers, and enough time to choose where to stand."}],
+      "choices": [{"id":"show_orders","label":"Show them the mistaken orders","detail":"Honesty earns the watch's trust: +20 starting crowns."},{"id":"stand_together","label":"Ask them to stand with you anyway","detail":"A shared vow strengthens the gate: +10 gate health."}]
+    },
+    "act2_ford": {
+      "act":2,"title":"II · Friends and Monsters","subtitle":"Not every raised hand holds a weapon.","location":"Lantern Ford","background":"MAP02",
+      "dialogue":[{"speaker":"Scout","text":"There are hundreds of them. Seedfolk, lantern spirits, whole families on the riverbank."},{"speaker":"{ally}","text":"Those at the back are carrying the wounded. They are not an attack line."},{"speaker":"Commander","text":"Then we defend the ford without turning frightened people into enemies."},{"speaker":"Veyra","text":"Keep a place where our surrender can be seen. If you can hold it, we can talk."}],
+      "choices":[{"id":"offer_parley","label":"Keep the sanctuary open","detail":"Remember their surrender. Mercy will shape your ending."},{"id":"hold_the_gate","label":"Defend the crossings first","detail":"Hold a tighter line: +15 crowns for prepared defenses."}]
+    },
+    "act3_rescue": {
+      "act":3,"title":"III · The Price of Victory","subtitle":"There is always more than one thing a victory can cost.","location":"Five-Banner Breach","background":"MAP03",
+      "dialogue":[{"speaker":"Commander","text":"The aqueduct is breaking. We cannot reach both enclosures before the next charge."},{"speaker":"{ally}","text":"One holds our missing watch. The other holds the families who followed the surrender flags."},{"speaker":"Orun","text":"Choose whom your road reaches first. We will carry the choice with you."},{"speaker":"Commander","text":"No one becomes a number in my report. Tell me their names."}],
+      "choices":[{"id":"rescue_ally","label":"Search for our missing ally","detail":"Recover one recently downed ally, if any; otherwise receive a 25-crown supply cache."},{"id":"rescue_families","label":"Open the families' enclosure","detail":"Protect the refugees. Their repair crews bring +35 crowns."}]
+    },
+    "act4_return": {
+      "act":4,"title":"IV · The Choosing","subtitle":"The road home has more than one locked door.","location":"The Return Road","background":"MAP04",
+      "dialogue":[{"speaker":"Commander","text":"The capital still has swords for hire. The prison still has people it has forgotten."},{"speaker":"{ally}","text":"A contract can buy time. An opened cell can earn trust. Neither tells us a person's worth."},{"speaker":"Commander","text":"We ask for volunteers. No one is conscripted for being poor, noble, or in chains."},{"speaker":"Quartermaster","text":"The survivors need reinforcements. Choose carefully; their lives will be part of your ending."}],
+      "choices":[{"id":"hire_capital","label":"Visit the capital contracts","detail":"Begin among the mercenaries; the prison candidates remain available too."},{"id":"open_prison","label":"Open the prison's recruitment room","detail":"Begin among the prisoners; the capital candidates remain available too."}]
+    },
+    "act4_road": {
+      "act":4,"title":"IV · A Road for Everyone","subtitle":"Reinforcements are only useful if they reach the last stand.","location":"The Return Road","background":"MAP04",
+      "dialogue":[{"speaker":"Quartermaster","text":"The king's siege scouts are closing the crossroads. We can hold the escort road or cut through the old gardens."},{"speaker":"{ally}","text":"If we stay, the refugees come with us. If we leave, we reach the palace before the scouts."},{"speaker":"Commander","text":"Speed saves lives too. But it never saves the same lives."},{"speaker":"Quartermaster","text":"The road watch has marked places for four towers. Your orders?"}],
+      "choices":[{"id":"escort_road","label":"Hold the escort road","detail":"Play the recovery defense: victory earns an escort seal and +75 crowns for Crownroot Court."},{"id":"take_shortcut","label":"Take the garden shortcut","detail":"Skip this optional battle and reach Crownroot Court immediately."}]
+    },
+    "act5_court": {
+      "act":5,"title":"V · The Last Stand","subtitle":"A kingdom is the people who are left to rebuild it.","location":"Crownroot Court","background":"MAP05",
+      "dialogue":[{"speaker":"Avarren","text":"They called my people monsters, then burned every road we used to leave."},{"speaker":"Commander","text":"And you answered by sending an army through homes that never gave that order."},{"speaker":"{ally}","text":"Both can be true. Neither makes the next death necessary."},{"speaker":"Avarren","text":"Then bring your little company through my court. Let us see what your mercy can defend."}],
+      "choices":[{"id":"break_oaths","label":"Break the siege machinery","detail":"Salvaged fittings provide +40 crowns for the final approach."},{"id":"protect_wounded","label":"Prepare shelter for the wounded","detail":"A stronger evacuation line adds +15 gate health."}]
+    },
+    "act5_throne": {
+      "act":5,"title":"V · The Uncrowned Threshold","subtitle":"The crown is cracked. The person beneath it is still listening.","location":"The Uncrowned Threshold","background":"MAP06",
+      "dialogue":[{"speaker":"Avarren","text":"I remember every name. That is why I cannot put the crown down."},{"speaker":"Commander","text":"Remembering the lost is not permission to keep making more of them."},{"speaker":"{ally}","text":"The root anchors feed his shield. Leave a clear road between the warning marks."},{"speaker":"Commander","text":"Together, then. With everyone who is still here."}],
+      "choices":[{"id":"name_the_fallen","label":"Speak the names of the lost","detail":"The king hesitates: his final guard begins with 8% less health."},{"id":"challenge_crown","label":"Challenge the crown, not his people","detail":"Take +25 crowns into the last defense."}]
+    },
+    "judgment": {
+      "act":5,"title":"A Crown Set Down","subtitle":"Victory gives you a choice. It does not make that choice for you.","location":"The Uncrowned Threshold","background":"MAP06",
+      "dialogue":[{"speaker":"Avarren","text":"There is nothing left behind this crown except what I have done."},{"speaker":"Commander","text":"Then let the people who survived decide what comes after it."},{"speaker":"{ally}","text":"Mercy can ask for repair. Justice can refuse revenge."},{"speaker":"Avarren","text":"Will you let me help rebuild what I broke?"}],
+      "choices":[{"id":"forgive","label":"Forgive him — require reparations","detail":"Disarm the king and rebuild with accountability."},{"id":"refuse_pardon","label":"Refuse pardon — bring him to judgment","detail":"Seal the crown and escort him to a public hearing."}]
+    },
+    "defeat_finale": {
+      "act":5,"title":"The Road From Ruin","subtitle":"A defeat does not decide whether anyone was worth saving.","location":"The Uncrowned Threshold","background":"MAP06",
+      "dialogue":[{"speaker":"Commander","text":"The threshold has fallen. The last evacuation road is still open."},{"speaker":"{ally}","text":"We can rally with the remaining watchtowers, or take our survivors beyond the roots."},{"speaker":"Commander","text":"No speeches about glorious losses. Give me a count of the living."},{"speaker":"Quartermaster","text":"The watch can spare extra fittings for one more attempt. The decision is yours."}],
+      "choices":[{"id":"rally_again","label":"Rally for another attempt","detail":"Keep surviving allies and gain 150 extra crowns for the defense."},{"id":"accept_defeat","label":"Lead the survivors to safety","detail":"Finish this run with a defeat epilogue and an earned title."}]
+    }
+  },
+  "ending_copy": {
+    "forgive":"The crown rests in open hands. Avarren lays down his power and joins the work of repair. Neither side forgets the dead; both agree to stop adding to their number.",
+    "refuse_pardon":"The crown is sealed in a copper chest. Avarren walks to a public hearing under the guard of people from both armies. There will be testimony before there is a sentence.",
+    "defeat":"You lead the living out by the last unbroken road. The court is lost, but the story carries the names of the people you chose to save. Another commander may yet return."
+  }
+}

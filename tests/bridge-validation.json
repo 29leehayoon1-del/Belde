@@ -1,0 +1,53 @@
+{
+  "godot_http_bridge": {
+    "status": "passed",
+    "test_cases": 11,
+    "runner": "python tests/bridge_godot_test.py"
+  },
+  "native_transport": {
+    "status": "passed",
+    "test_cases": 9,
+    "implementations": [
+      "C",
+      "Python"
+    ],
+    "runner": "python tests/bridge_native_test.py"
+  },
+  "background_worker_native_godot": {
+    "status": "passed",
+    "runner": "python tests/bridge_worker_test.py",
+    "scope": "Actual background.js, C native host and Godot server; Chrome Port API adapted in Node."
+  },
+  "editor_popup_ui": {
+    "status": "passed",
+    "runner": "python tests/bridge_editor_ui_test.py",
+    "scope": "Actual editor/popup UI modules in headless Chromium with Chrome Port transport explicitly mocked; validates tower pads, terrain, unit placement on enemy lanes, inactive entity occupancy, drag/drop, tracks, roosts, history and reconnect."
+  },
+  "chrome_native_installation": {
+    "status": "skipped",
+    "runner": "python tests/bridge_extension_test.py",
+    "skip_exit_code": 77,
+    "reason": "Managed Chromium ExtensionInstallBlocklist contains '*'; no policy changed."
+  },
+  "windows_native_host": {
+    "status": "cross_compiled",
+    "runtime_tested": false
+  },
+  "macos_native_host": {
+    "status": "Python fallback supplied",
+    "macos_runtime_tested": false
+  },
+  "coordinator": {
+    "status": "passed",
+    "runner": "python tests/bridge_coordinator_test.py",
+    "deployment": "not deployed; optional self-hosted service",
+    "test_cases": 9,
+    "scope": "SQLite coordinator and real Godot clients; authenticated contention, takeover, expiry, renewal, release and service-outage fail-closed behavior. No hosted service or physical cross-device test."
+  },
+  "actual_game_native_integration": {
+    "status": "passed",
+    "runner": "python tests/bridge_game_integration_test.py",
+    "scope": "Actual parent main scene and campaign/simulation through background.js, C native host and local bridge; Chrome Port API adapted in Node. Verifies tower edits, stale revisions, unit lane placement, roost assignment, Patrol mode, route editing, 64-node limit, undo/redo, wave start and deferred combat edits. Duplicate wave-start rejection preserves the pending edit queue."
+  },
+  "audit_date": "2026-10-23"
+}

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Belde \u2014 Connected Commander",
+  "version": "0.1.0",
+  "description": "The paired map and formation editor for Belde. The PC game owns the battle.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAreMxzYi2u7p1JJ///KPF30R+nzgV4+9TbY1KLwuCn4lScJcZwV8tOBdLdBoMMgvJzogh4LmCfoCL4shbsp5PQmAbRkfkmByjHZOEYAenNnUQvufcqRiojO/icy9h/DrYG4bSA02DgP5z/fNuYIJcvvmci+UBmE9sSVdoyevc+KNUz16Mxty1CxJ+6yq7XebAZmNnlpny9gAzht3ZPKghVyb3HEP2XzQ0fAsJkddkZKJrELCMhpbjGoRTQYIi/tPWzoayY5AY4T+Q75N2kJ6EuBvaawxp/aNj85Im36GdOxg+T5oXlCLJJROxYyk/tSodCJqDdEWQE2K7HbJI4sQlOwIDAQAB",
+  "permissions": [
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Belde Connected Commander",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'"
+  }
+}

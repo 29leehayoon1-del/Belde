@@ -1,0 +1,13 @@
+# Local toolchains, imported caches, test data and exports
+.tools/
+.runtime*/
+game/.godot/
+build/
+dist/
+__pycache__/
+.pytest_cache/
+*.pyc
+/native/bin/
+# Earlier delivery duplicates stay local; source art remains tracked.
+/Belde-visual-preproduction.zip
+/delivery/

@@ -1,0 +1,41 @@
+{
+  "godot": "4.6.3.stable.official.7d41c59c4",
+  "packages": [
+    {
+      "platform": "windows",
+      "file": "dist/Belde-Windows-x86_64.zip",
+      "sha256": "644b98f7a5fdd1175abef4a0c40da03d6db7eb0b426f3e505252a4caec1ad306",
+      "bytes": 96222894,
+      "mib": 91.77,
+      "validation": "Export succeeded; ZIP CRC and required files verified",
+      "native_execution": "Not tested on this OS"
+    },
+    {
+      "platform": "linux",
+      "file": "dist/Belde-Linux-x86_64.zip",
+      "sha256": "e7d8155a9d80ffb37b905770b7478a1cf01c84859d8e1e9e6e80c31745d198cd",
+      "bytes": 87437099,
+      "mib": 83.39,
+      "validation": "Export succeeded; ZIP CRC and required files verified",
+      "native_execution": "Packaged Linux executable and PCK passed isolated headless title and battle-preview startups on Debian 13 x86_64. External headless UI callback flow also passed against the exported PCK using the matching editor engine; the release ELF does not expose --script. Graphical execution was not tested in this build pass."
+    },
+    {
+      "platform": "macos-arm64",
+      "file": "dist/Belde-macOS-arm64.zip",
+      "sha256": "d6081e1a39972ee698cd86efdded1150bfdd53f09daa670d6760cd6b7ba23b08",
+      "bytes": 90145518,
+      "mib": 85.97,
+      "validation": "Export succeeded; ZIP CRC and required files verified",
+      "native_execution": "Not tested on this OS"
+    },
+    {
+      "platform": "macos-x86_64",
+      "file": "dist/Belde-macOS-x86_64.zip",
+      "sha256": "4c5aeaa9445747ddc0919bf2982b5e739438054d10f1e781dc15663b42122995",
+      "bytes": 93408689,
+      "mib": 89.08,
+      "validation": "Export succeeded; ZIP CRC and required files verified",
+      "native_execution": "Not tested on this OS"
+    }
+  ]
+}
